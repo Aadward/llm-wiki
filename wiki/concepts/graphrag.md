@@ -61,3 +61,5 @@ while using 9x-43x fewer tokens per query (C0 root-level communities).
 - [[community-detection]] - Algorithm used to partition the graph
 - [[query-focused-summarization]] - The task GraphRAG enables
 - [[retrieval-augmented-generation]] - The broader paradigm
+- [[modular-rag]] - The meta-framework that categorizes GraphRAG as an implementation
+- [[kg-index]] - GraphRAG instantiates the KG Index operator from Modular RAG

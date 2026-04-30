@@ -21,3 +21,14 @@ Chronological record of wiki activity. Append-only.
 - Created concept pages: [[concept/graphrag]], [[concept/vector-rag]], [[concept/knowledge-graph]], [[concept/query-focused-summarization]], [[concept/retrieval-augmented-generation]], [[concept/community-detection]], [[concept/map-reduce-summarization]], [[concept/leiden-algorithm]], [[concept/llm-as-a-judge]], [[concept/adaptive-benchmarking]]
 - Total: 1 source page, 3 entity pages, 10 concept pages
 - Key insight: GraphRAG uses LLM-extracted knowledge graphs and Leiden community detection to enable global sensemaking over large corpora, outperforming vector RAG on comprehensiveness (72-83% win) and diversity (62-82% win)
+
+## [2026-04-30] ingest | Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks
+
+- Processed: raw/Modular RAG Transforming RAG Systems into LEGO-like Reconfigurable Frameworks.md
+- arXiv: 2407.21059v1, Tongji University / Fudan University
+- Created source summary: [[source/modular-rag-transforming-rag-systems]]
+- Created entity pages: [[entity/yunfan-gao]], [[entity/yun-xiong]], [[entity/meng-wang]], [[entity/haofen-wang]]
+- Created concept pages: [[concept/modular-rag]], [[concept/rag-paradigms]], [[concept/rag-flow-pattern]], [[concept/orchestration]], [[concept/kg-index]], [[concept/chunk-optimization]], [[concept/query-expansion]], [[concept/query-transformation]], [[concept/retriever-fine-tuning]], [[concept/post-retrieval-processing]]
+- Updated GraphRAG cross-references: [[concept/graphrag]] and [[source/from-local-to-global-graphrag]] now link to Modular RAG
+- Total: 1 source page, 4 entity pages, 10 concept pages added
+- Key insight: Modular RAG provides the meta-framework that categorizes GraphRAG as a concrete implementation of KG Index + Orchestration (Branching + Fusion) patterns. Naive RAG ⊂ Advanced RAG ⊂ Modular RAG.

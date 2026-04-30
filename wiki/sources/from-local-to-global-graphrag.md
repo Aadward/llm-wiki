@@ -7,7 +7,7 @@ source-file: "From Local to Global A GraphRAG Approach to Query-Focused Summariz
 tags: [graphrag, rag, knowledge-graph, llm, summarization, query-focused]
 summary: "GraphRAG uses LLM-extracted knowledge graphs and community detection to enable global sensemaking over large text corpora, outperforming conventional vector RAG on comprehensiveness and diversity for query-focused summarization tasks."
 sources: []
-related: []
+related: ["modular-rag-transforming-rag-systems"]
 ---
 
 # From Local to Global: A GraphRAG Approach to Query-Focused Summarization

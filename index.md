@@ -2,19 +2,23 @@
 
 ## Overview
 
-- Total pages: 16
+- Total pages: 26
 - Last updated: 2026-04-30
-- This wiki covers GraphRAG and related RAG techniques
+- This wiki covers GraphRAG, Modular RAG, and related RAG techniques
 
-## Entities (5 pages)
+## Entities (9 pages)
 
 | Page | Summary | Updated |
 |------|---------|---------|
 | [[entity/microsoft-research]] | Microsoft's fundamental research division. Primary affiliation for GraphRAG paper authors. | 2026-04-30 |
 | [[entity/darren-edge]] | Microsoft Research researcher and co-lead author of the GraphRAG paper. | 2026-04-30 |
 | [[entity/ha-trinh]] | Microsoft Research researcher and co-lead author of the GraphRAG paper. | 2026-04-30 |
+| [[entity/yunfan-gao]] | Tongji University researcher, lead author of Modular RAG paper. | 2026-04-30 |
+| [[entity/yun-xiong]] | Fudan University researcher, co-author of Modular RAG paper. | 2026-04-30 |
+| [[entity/meng-wang]] | Tongji University researcher, co-author of Modular RAG paper. | 2026-04-30 |
+| [[entity/haofen-wang]] | Tongji University researcher, corresponding author of Modular RAG paper. | 2026-04-30 |
 
-## Concepts (9 pages)
+## Concepts (18 pages)
 
 | Page | Summary | Updated |
 |------|---------|---------|
@@ -28,12 +32,23 @@
 | [[concept/leiden-algorithm]] | Community detection algorithm used in GraphRAG for hierarchical partitioning. | 2026-04-30 |
 | [[concept/llm-as-a-judge]] | Evaluation methodology using an LLM to judge and compare outputs from different systems. | 2026-04-30 |
 | [[concept/adaptive-benchmarking]] | Dynamic generation of evaluation benchmarks tailored to specific corpora. | 2026-04-30 |
+| [[concept/modular-rag]] | Meta-framework decomposing RAG into Module/Sub-module/Operator with orchestration. | 2026-04-30 |
+| [[concept/rag-paradigms]] | Evolution of RAG from Naive to Advanced to Modular. | 2026-04-30 |
+| [[concept/rag-flow-pattern]] | RAG flow patterns: Linear, Conditional, Branching, Looping. | 2026-04-30 |
+| [[concept/orchestration]] | Control layer for routing, scheduling, and fusion in Modular RAG. | 2026-04-30 |
+| [[concept/kg-index]] | Knowledge Graph-based document indexing in RAG systems. | 2026-04-30 |
+| [[concept/chunk-optimization]] | Strategies for document chunk size and overlap optimization. | 2026-04-30 |
+| [[concept/query-expansion]] | Query expansion techniques using Multi-Query and Sub-Query. | 2026-04-30 |
+| [[concept/query-transformation]] | Query transformation via Rewrite, HyDE, Step-back. | 2026-04-30 |
+| [[concept/retriever-fine-tuning]] | Fine-tuning methods for dense retrievers. | 2026-04-30 |
+| [[concept/post-retrieval-processing]] | Post-retrieval reranking, compression, and selection. | 2026-04-30 |
 
-## Sources (1 pages)
+## Sources (2 pages)
 
 | Page | Summary | Updated |
 |------|---------|---------|
-| [[source/from-local-to-global-graphrag]] | GraphRAG paper: Graph-based RAG approach for global sensemaking over large text corpora. | 2026-04-30 |
+| [[source/from-local-to-global-graphrag]] | GraphRAG paper: Graph-based RAG for global sensemaking. | 2026-04-30 |
+| [[source/modular-rag-transforming-rag-systems]] | Modular RAG meta-framework: Three-tier architecture with orchestration. | 2026-04-30 |
 
 ## Synthesis (0 pages)
 
