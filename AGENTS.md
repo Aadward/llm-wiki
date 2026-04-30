@@ -8,17 +8,19 @@ This is a personal knowledge base built using the LLM Wiki pattern. The wiki sit
 
 ---
 
-## Available Commands
+## Available Skills
 
-| Command | Purpose |
-|---------|---------|
-| `/ingest` | Process a new source document into the wiki |
-| `/query` | Answer a question using the wiki |
-| `/lint` | Health check - find contradictions, orphans, stale content |
-| `/file` | Save an answer/analysis back to wiki as synthesis page |
-| `/maintain` | Fix broken links, update stale pages, improve cross-references |
-| `/search` | Search wiki pages using the index |
-| `/status` | Show wiki statistics and recent activity |
+| Skill | Purpose |
+|-------|---------|
+| `ingest` | Process a new source document into the wiki |
+| `query` | Answer a question using the wiki |
+| `lint` | Health check - find contradictions, orphans, stale content |
+| `file` | Save an answer/analysis back to wiki as synthesis page |
+| `maintain` | Fix broken links, update stale pages, improve cross-references |
+| `search` | Search wiki pages using the index |
+| `status` | Show wiki statistics and recent activity |
+
+Invoke skills using the `/` prefix or via the `skill` tool with the skill name.
 
 ---
 
@@ -26,29 +28,26 @@ This is a personal knowledge base built using the LLM Wiki pattern. The wiki sit
 
 ```
 llm-wiki/
-├── AGENTS.md          # This file - schema and conventions
-├── index.md           # Content catalog (auto-updated by LLM)
-├── log.md             # Chronological activity log (append-only)
-├── SKILLS/            # Skill definitions for wiki operations
-│   ├── ingest.md      # /ingest command
-│   ├── query.md       # /query command
-│   ├── lint.md        # /lint command
-│   ├── file.md        # /file command
-│   ├── maintain.md    # /maintain command
-│   ├── search.md      # /search command
-│   ├── status.md      # /status command
-│   ├── wiki-maintenance.md  # Cross-reference and consistency rules
-│   ├── source-ingest.md     # Detailed ingest workflow reference
-│   └── index-management.md  # index.md and log.md maintenance
-├── raw/               # Immutable source documents (read-only)
-│   ├── sources.md     # List of sources with metadata
-│   └── assets/        # Downloaded images/attachments
-└── wiki/              # LLM-generated content (LLM writes here)
-    ├── entities/      # People, places, things
-    ├── concepts/      # Topics, ideas, techniques
-    ├── sources/       # Per-source summary pages
-    ├── synthesis/     # Comparative analysis, thesis pages
-    └── overview.md    # High-level wiki summary
+├── AGENTS.md           # This file - schema and conventions
+├── index.md            # Content catalog (auto-updated by LLM)
+├── log.md              # Chronological activity log (append-only)
+├── .opencode/skills/   # OpenCode skill definitions
+│   ├── ingest/SKILL.md
+│   ├── query/SKILL.md
+│   ├── lint/SKILL.md
+│   ├── file/SKILL.md
+│   ├── maintain/SKILL.md
+│   ├── search/SKILL.md
+│   └── status/SKILL.md
+├── raw/                # Immutable source documents (read-only)
+│   ├── sources.md      # List of sources with metadata
+│   └── assets/         # Downloaded images/attachments
+└── wiki/               # LLM-generated content (LLM writes here)
+    ├── entities/       # People, places, things
+    ├── concepts/       # Topics, ideas, techniques
+    ├── sources/        # Per-source summary pages
+    ├── synthesis/      # Comparative analysis, thesis pages
+    └── overview.md     # High-level wiki summary
 ```
 
 ---
@@ -90,11 +89,11 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 
 ---
 
-## Operations Detail
+## Skills Detail
 
-### /ingest - Process New Source
+### ingest - Process New Source
 
-**Trigger**: User drops a new file in `raw/` and uses `/ingest`.
+**Trigger**: User drops a new file in `raw/` and invokes `ingest` skill.
 
 **Workflow** (8 steps):
 1. Read the source file from `raw/`
@@ -108,20 +107,20 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 
 **Single source may touch 10-15 wiki pages.**
 
-### /query - Answer Questions
+### query - Answer Questions
 
-**Trigger**: User asks a question.
+**Trigger**: User invokes `query` skill.
 
 **Workflow**:
 1. Read `index.md` to find relevant pages
 2. Read relevant wiki pages
 3. Synthesize answer with citations `[[page-name]]`
 4. Present answer
-5. Offer to file answer back to wiki with `/file`
+5. Offer to file answer back to wiki using `file` skill
 
-### /lint - Health Check
+### lint - Health Check
 
-**Trigger**: User uses `/lint`.
+**Trigger**: User invokes `lint` skill.
 
 **Check for**:
 - Contradictions between pages
@@ -132,15 +131,15 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 - Broken links
 - Data gaps fillable via web search
 
-### /file - Save Answer to Wiki
+### file - Save Answer to Wiki
 
-**Trigger**: After `/query` when answer has lasting value.
+**Trigger**: After `query` when answer has lasting value.
 
 **Creates**: `wiki/synthesis/[topic].md` with full citations.
 
-### /maintain - Fix Issues
+### maintain - Fix Issues
 
-**Trigger**: User uses `/maintain`.
+**Trigger**: User invokes `maintain` skill.
 
 **Actions**:
 - Fix broken wiki links
@@ -148,15 +147,15 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 - Improve cross-references
 - Ensure consistency (dates, tags, names)
 
-### /search - Find Pages
+### search - Find Pages
 
-**Trigger**: User uses `/search [query]`.
+**Trigger**: User invokes `search` skill.
 
 **Uses**: `index.md` to find relevant pages.
 
-### /status - Show Stats
+### status - Show Stats
 
-**Trigger**: User uses `/status`.
+**Trigger**: User invokes `status` skill.
 
 **Shows**: Page counts, recent activity, health metrics.
 

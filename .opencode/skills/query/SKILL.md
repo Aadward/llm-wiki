@@ -1,3 +1,9 @@
+---
+name: query
+description: Answer a question by searching the wiki and synthesizing information. Use when user asks a knowledge question that the wiki might contain.
+compatibility: opencode
+---
+
 # /query
 
 ## Purpose
@@ -18,7 +24,7 @@ Read the candidate wiki pages identified from index.
 
 Combine information from multiple pages with citations:
 - Use `[[page-name]]` to cite wiki pages
-- Quote key passages with `>`blockquote`
+- Quote key passages with `>`blockquote
 - Flag any contradictions noticed
 
 ### Step 4: Present Answer
@@ -41,4 +47,6 @@ Ask user if answer should be filed back to wiki as a synthesis page:
 Good candidates for filing:
 - Comparisons between entities/concepts
 - Analysis of a topic across multiple sources
-- Answers to recurring questions
+- Synthesized explanation
+- Timeline or chronology
+- Answer to recurring question

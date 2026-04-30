@@ -1,3 +1,9 @@
+---
+name: lint
+description: Perform a health check on the wiki. Find contradictions, orphan pages, stale content, broken links, and missing cross-references. Use periodically to maintain wiki quality.
+compatibility: opencode
+---
+
 # /lint
 
 ## Purpose

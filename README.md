@@ -22,16 +22,41 @@ Raw Sources (不可变) → LLM处理 → Wiki (持久、递增)
 
 | 命令 | 用途 | 使用场景 |
 |------|------|----------|
-| `/ingest` | 摄入源文档到 wiki | 添加新文章/论文/资料时 |
-| `/query` | 基于 wiki 回答问题 | 已有资料想了解某主题时 |
-| `/lint` | 健康检查 | 定期维护，确保 wiki 质量 |
-| `/file` | 将答案归档为 synthesis 页 | 问答有价值需要保存时 |
-| `/maintain` | 修复链接、更新过时内容 | 日常维护优化 |
-| `/search` | 搜索 wiki 页面 | 快速定位特定主题 |
-| `/status` | 查看 wiki 状态统计 | 了解 wiki 整体情况 |
+| `ingest` | 摄入源文档到 wiki | 添加新文章/论文/资料时 |
+| `query` | 基于 wiki 回答问题 | 已有资料想了解某主题时 |
+| `lint` | 健康检查 | 定期维护，确保 wiki 质量 |
+| `file` | 将答案归档为 synthesis 页 | 问答有价值需要保存时 |
+| `maintain` | 修复链接、更新过时内容 | 日常维护优化 |
+| `search` | 搜索 wiki 页面 | 快速定位特定主题 |
+| `status` | 查看 wiki 状态统计 | 了解 wiki 整体情况 |
+
+通过 `skill` 工具或 `/` 前缀调用这些技能。
 
 ## 目录结构
 
+```
+llm-wiki/
+├── AGENTS.md           # Schema 规范 - LLM 的操作手册
+├── index.md            # 内容目录 - 快速导航
+├── log.md              # 活动日志 - 时间线记录
+├── .opencode/skills/   # OpenCode 技能定义
+│   ├── ingest/SKILL.md
+│   ├── query/SKILL.md
+│   ├── lint/SKILL.md
+│   ├── file/SKILL.md
+│   ├── maintain/SKILL.md
+│   ├── search/SKILL.md
+│   ├── status/SKILL.md
+│   ├── wiki-conventions/SKILL.md
+│   └── index-management/SKILL.md
+├── raw/                # 源文档 (只读)
+│   ├── sources.md      # 源文档元数据
+│   └── assets/         # 图片/附件
+└── wiki/               # LLM 生成的内容
+    ├── entities/       # 人物、机构、实体
+    ├── concepts/       # 概念、主题、领域
+    ├── sources/        # 源文档摘要页
+    └── synthesis/      # 综合分析、比较、论文
 ```
 llm-wiki/
 ├── AGENTS.md           # Schema 规范 - LLM 的操作手册
@@ -91,13 +116,13 @@ llm-wiki/
 
 ## 工作流
 
-### 1. 摄入源文档 (`/ingest`)
+### 1. 摄入源文档 (`ingest`)
 
 当你有新文章、论文、资料需要消化时：
 
 ```
 1. 将源文档放入 raw/
-2. 在 OpenCode 中执行 /ingest
+2. 在 OpenCode 中调用 skill: ingest
 3. LLM 按流程执行:
    - 读取源文档
    - 与你讨论关键要点
@@ -111,24 +136,24 @@ llm-wiki/
 
 **单次摄入可能影响 10-15 个 wiki 页面。**
 
-### 2. 提问 (`/query`)
+### 2. 提问 (`query`)
 
 当你有问题想问时：
 
 ```
-1. 执行 /query [你的问题]
+1. 调用 skill: query [你的问题]
 2. LLM 读取 index.md 找到相关页面
 3. 读取相关 wiki 页面
 4. 综合回答并引用 [[页面链接]]
-5. LLM 会询问是否将答案归档 (使用 /file)
+5. LLM 会询问是否将答案归档 (使用 file)
 ```
 
-### 3. 维护健康 (`/lint`)
+### 3. 维护健康 (`lint`)
 
 定期检查 wiki 健康状态：
 
 ```
-执行 /lint
+调用 skill: lint
 LLM 会检查:
 - 页面间矛盾 → 标记 [!contradiction]
 - 过时信息 → 标记 [!stale]
@@ -137,46 +162,46 @@ LLM 会检查:
 - 失效的链接
 ```
 
-### 4. 归档答案 (`/file`)
+### 4. 归档答案 (`file`)
 
-将 `/query` 的有价值答案保存到 wiki：
+将 `query` 的有价值答案保存到 wiki：
 
 ```
-1. /query 获得答案
+1. query 获得答案
 2. 确认答案有价值
-3. 执行 /file
+3. 调用 skill: file
 4. LLM 创建 wiki/synthesis/[主题].md
 5. 更新 index.md 和 log.md
 ```
 
-### 5. 日常维护 (`/maintain`)
+### 5. 日常维护 (`maintain`)
 
 修复链接、更新内容：
 
 ```
-执行 /maintain
+调用 skill: maintain
 - 修复失效的 wiki 链接
 - 更新过时页面
 - 改进交叉引用
 - 确保一致性
 ```
 
-### 6. 搜索 (`/search`)
+### 6. 搜索 (`search`)
 
 快速找到特定主题的页面：
 
 ```
-执行 /search [关键词]
+调用 skill: search [关键词]
 - 查看 index.md 中的匹配项
 - 获取相关页面链接和摘要
 ```
 
-### 7. 状态查看 (`/status`)
+### 7. 状态查看 (`status`)
 
 了解 wiki 整体情况：
 
 ```
-执行 /status
+调用 skill: status
 - 页面总数统计
 - 最近活动
 - 健康指标

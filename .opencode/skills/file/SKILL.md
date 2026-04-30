@@ -1,3 +1,9 @@
+---
+name: file
+description: File an answer or analysis back into the wiki as a synthesis page. Use after /query when the answer has lasting value and should be preserved.
+compatibility: opencode
+---
+
 # /file
 
 ## Purpose

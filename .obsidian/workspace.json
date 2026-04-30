@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SKILLS/status.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "status"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SKILLS/status.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "status 的反向链接列表"
+              "title": "README 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SKILLS/status.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "status 的出链列表"
+              "title": "README 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SKILLS/status.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "status 的大纲"
+              "title": "README 的大纲"
             }
           }
         ]
@@ -185,8 +185,12 @@
   },
   "active": "e3bc6cf5cbafb464",
   "lastOpenFiles": [
-    "SKILLS/source-ingest.md",
+    "AGENTS.md",
+    "README.md",
+    "log.md",
+    "index.md",
     "SKILLS/status.md",
+    "SKILLS/source-ingest.md",
     "SKILLS/search.md",
     "SKILLS/query.md",
     "SKILLS/maintain.md",
@@ -194,11 +198,7 @@
     "SKILLS/file.md",
     "SKILLS/ingest.md",
     "SKILLS/index-management.md",
-    "README.md",
-    "log.md",
-    "index.md",
     "SKILLS/wiki-maintenance.md",
-    "AGENTS.md",
     "raw/sources.md"
   ]
 }

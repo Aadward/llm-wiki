@@ -1,3 +1,9 @@
+---
+name: maintain
+description: General wiki maintenance - fix broken links, update stale content, improve cross-references, ensure consistency. Use for routine maintenance tasks.
+compatibility: opencode
+---
+
 # /maintain
 
 ## Purpose

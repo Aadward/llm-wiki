@@ -1,3 +1,9 @@
+---
+name: ingest
+description: Ingest a new source document into the wiki. Process raw sources, create summary pages, update entities/concepts, maintain index and log. Use when user drops a new file in raw/ and wants to process it.
+compatibility: opencode
+---
+
 # /ingest
 
 ## Purpose

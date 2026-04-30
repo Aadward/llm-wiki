@@ -1,3 +1,9 @@
+---
+name: search
+description: Search the wiki for pages matching a query using the index file. Use when user wants to find specific topics or information in the wiki.
+compatibility: opencode
+---
+
 # /search
 
 ## Purpose

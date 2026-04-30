@@ -1,3 +1,9 @@
+---
+name: status
+description: Show current wiki status - page counts, recent activity, health metrics. Use when user wants to understand the overall state of the wiki.
+compatibility: opencode
+---
+
 # /status
 
 ## Purpose
