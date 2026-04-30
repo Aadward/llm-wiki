@@ -18,6 +18,56 @@ Raw Sources (不可变) → LLM处理 → Wiki (持久、递增)
 - **Markdown**: 纯文本格式，wiki 的载体
 - **Obsidian**: 知识库阅读和展示工具
 
+## 命令参考
+
+| 命令 | 用途 | 使用场景 |
+|------|------|----------|
+| `/ingest` | 摄入源文档到 wiki | 添加新文章/论文/资料时 |
+| `/query` | 基于 wiki 回答问题 | 已有资料想了解某主题时 |
+| `/lint` | 健康检查 | 定期维护，确保 wiki 质量 |
+| `/file` | 将答案归档为 synthesis 页 | 问答有价值需要保存时 |
+| `/maintain` | 修复链接、更新过时内容 | 日常维护优化 |
+| `/search` | 搜索 wiki 页面 | 快速定位特定主题 |
+| `/status` | 查看 wiki 状态统计 | 了解 wiki 整体情况 |
+
+## 目录结构
+
+```
+llm-wiki/
+├── AGENTS.md           # Schema 规范 - LLM 的操作手册
+├── index.md            # 内容目录 - 快速导航
+├── log.md              # 活动日志 - 时间线记录
+├── SKILLS/             # 技能定义 (每个命令一个文件)
+│   ├── ingest.md       # /ingest 详细流程
+│   ├── query.md        # /query 详细流程
+│   ├── lint.md         # /lint 详细流程
+│   ├── file.md         # /file 详细流程
+│   ├── maintain.md     # /maintain 详细流程
+│   ├── search.md       # /search 详细流程
+│   ├── status.md       # /status 详细流程
+│   ├── wiki-maintenance.md  # 交叉引用/一致性规则
+│   ├── source-ingest.md     # 摄入工作流完整参考
+│   └── index-management.md  # index/log 维护
+├── raw/                # 源文档 (只读)
+│   ├── sources.md      # 源文档元数据
+│   └── assets/         # 图片/附件
+└── wiki/               # LLM 生成的内容
+    ├── entities/       # 人物、机构、实体
+    ├── concepts/       # 概念、主题、领域
+    ├── sources/        # 源文档摘要页
+    └── synthesis/      # 综合分析、比较、论文
+```
+Raw Sources (不可变) → LLM处理 → Wiki (持久、递增)
+                                       ↓
+                                 Obsidian 展示
+```
+
+## 工具栈
+
+- **OpenCode**: LLM 代理，读取 AGENTS.md 和 SKILLS/ 来维护 wiki
+- **Markdown**: 纯文本格式，wiki 的载体
+- **Obsidian**: 知识库阅读和展示工具
+
 ## 目录结构
 
 ```
@@ -41,42 +91,95 @@ llm-wiki/
 
 ## 工作流
 
-### 1. 摄入源文档 (Ingest)
+### 1. 摄入源文档 (`/ingest`)
+
+当你有新文章、论文、资料需要消化时：
 
 ```
 1. 将源文档放入 raw/
-2. 在 OpenCode 中告诉 LLM: "处理新的源文档"
-3. LLM 按照 source-ingest.md 执行:
+2. 在 OpenCode 中执行 /ingest
+3. LLM 按流程执行:
+   - 读取源文档
+   - 与你讨论关键要点
    - 创建源文档摘要页 (wiki/sources/)
    - 提取实体并更新实体页 (wiki/entities/)
    - 提取概念并更新概念页 (wiki/concepts/)
    - 更新 index.md
    - 追加 log.md
-4. 在 Obsidian 中查看结果
+4. 在 Obsidian 中查看生成的 wiki 页面
 ```
 
 **单次摄入可能影响 10-15 个 wiki 页面。**
 
-### 2. 提问 (Query)
+### 2. 提问 (`/query`)
+
+当你有问题想问时：
 
 ```
-1. 在 OpenCode 中提问
+1. 执行 /query [你的问题]
 2. LLM 读取 index.md 找到相关页面
 3. 读取相关 wiki 页面
 4. 综合回答并引用 [[页面链接]]
-5. 好答案可以归档回 wiki 作为新页面
+5. LLM 会询问是否将答案归档 (使用 /file)
 ```
 
-### 3. 维护 (Lint)
+### 3. 维护健康 (`/lint`)
+
+定期检查 wiki 健康状态：
 
 ```
-周期性告诉 LLM: "检查 wiki 健康状态"
+执行 /lint
 LLM 会检查:
-- 页面间矛盾
-- 过时信息
+- 页面间矛盾 → 标记 [!contradiction]
+- 过时信息 → 标记 [!stale]
 - 孤立页面 (无入链)
 - 缺失的交叉引用
-- 可填充的数据空白
+- 失效的链接
+```
+
+### 4. 归档答案 (`/file`)
+
+将 `/query` 的有价值答案保存到 wiki：
+
+```
+1. /query 获得答案
+2. 确认答案有价值
+3. 执行 /file
+4. LLM 创建 wiki/synthesis/[主题].md
+5. 更新 index.md 和 log.md
+```
+
+### 5. 日常维护 (`/maintain`)
+
+修复链接、更新内容：
+
+```
+执行 /maintain
+- 修复失效的 wiki 链接
+- 更新过时页面
+- 改进交叉引用
+- 确保一致性
+```
+
+### 6. 搜索 (`/search`)
+
+快速找到特定主题的页面：
+
+```
+执行 /search [关键词]
+- 查看 index.md 中的匹配项
+- 获取相关页面链接和摘要
+```
+
+### 7. 状态查看 (`/status`)
+
+了解 wiki 整体情况：
+
+```
+执行 /status
+- 页面总数统计
+- 最近活动
+- 健康指标
 ```
 
 ## Obsidian 使用

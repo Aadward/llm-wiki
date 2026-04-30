@@ -8,6 +8,20 @@ This is a personal knowledge base built using the LLM Wiki pattern. The wiki sit
 
 ---
 
+## Available Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/ingest` | Process a new source document into the wiki |
+| `/query` | Answer a question using the wiki |
+| `/lint` | Health check - find contradictions, orphans, stale content |
+| `/file` | Save an answer/analysis back to wiki as synthesis page |
+| `/maintain` | Fix broken links, update stale pages, improve cross-references |
+| `/search` | Search wiki pages using the index |
+| `/status` | Show wiki statistics and recent activity |
+
+---
+
 ## Directory Structure
 
 ```
@@ -16,9 +30,16 @@ llm-wiki/
 ├── index.md           # Content catalog (auto-updated by LLM)
 ├── log.md             # Chronological activity log (append-only)
 ├── SKILLS/            # Skill definitions for wiki operations
-│   ├── wiki-maintenance.md
-│   ├── source-ingest.md
-│   └── index-management.md
+│   ├── ingest.md      # /ingest command
+│   ├── query.md       # /query command
+│   ├── lint.md        # /lint command
+│   ├── file.md        # /file command
+│   ├── maintain.md    # /maintain command
+│   ├── search.md      # /search command
+│   ├── status.md      # /status command
+│   ├── wiki-maintenance.md  # Cross-reference and consistency rules
+│   ├── source-ingest.md     # Detailed ingest workflow reference
+│   └── index-management.md  # index.md and log.md maintenance
 ├── raw/               # Immutable source documents (read-only)
 │   ├── sources.md     # List of sources with metadata
 │   └── assets/        # Downloaded images/attachments
@@ -69,24 +90,25 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 
 ---
 
-## Operations
+## Operations Detail
 
-### 1. Ingest (Process New Source)
+### /ingest - Process New Source
 
-**Trigger**: User drops a new file in `raw/` and requests processing.
+**Trigger**: User drops a new file in `raw/` and uses `/ingest`.
 
-**Workflow**:
+**Workflow** (8 steps):
 1. Read the source file from `raw/`
 2. Discuss key takeaways with user
 3. Create source summary page in `wiki/sources/`
-4. Update `index.md` with new entry
-5. Update relevant entity pages (create if new)
-6. Update relevant concept pages (create if new)
-7. Append entry to `log.md`
+4. Update relevant entity pages (create if new)
+5. Update relevant concept pages (create if new)
+6. Update synthesis pages if applicable
+7. Update `index.md` with new entry
+8. Append entry to `log.md`
 
 **Single source may touch 10-15 wiki pages.**
 
-### 2. Query (Answer Questions)
+### /query - Answer Questions
 
 **Trigger**: User asks a question.
 
@@ -95,11 +117,11 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 2. Read relevant wiki pages
 3. Synthesize answer with citations `[[page-name]]`
 4. Present answer
-5. **Optionally**: File good answers back into wiki as new pages
+5. Offer to file answer back to wiki with `/file`
 
-### 3. Lint (Health Check)
+### /lint - Health Check
 
-**Trigger**: User requests periodic maintenance.
+**Trigger**: User uses `/lint`.
 
 **Check for**:
 - Contradictions between pages
@@ -107,7 +129,36 @@ Use Obsidian-compatible wiki links: `[[page-name]]` for internal links.
 - Orphan pages with no inbound links
 - Important concepts lacking their own page
 - Missing cross-references
+- Broken links
 - Data gaps fillable via web search
+
+### /file - Save Answer to Wiki
+
+**Trigger**: After `/query` when answer has lasting value.
+
+**Creates**: `wiki/synthesis/[topic].md` with full citations.
+
+### /maintain - Fix Issues
+
+**Trigger**: User uses `/maintain`.
+
+**Actions**:
+- Fix broken wiki links
+- Update stale pages with newer source info
+- Improve cross-references
+- Ensure consistency (dates, tags, names)
+
+### /search - Find Pages
+
+**Trigger**: User uses `/search [query]`.
+
+**Uses**: `index.md` to find relevant pages.
+
+### /status - Show Stats
+
+**Trigger**: User uses `/status`.
+
+**Shows**: Page counts, recent activity, health metrics.
 
 ---
 
