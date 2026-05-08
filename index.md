@@ -16,6 +16,7 @@ updated: 2026-05-08
 ## Entities
 
 - [[openclaw]] — AI Agent 平台，支持多 Agent、子 Agent、记忆系统和消息平台集成
+- [[hermes-agent]] — Nous Research 开源的自我进化 AI Agent 框架，"The agent that grows with you"
 
 ---
 
@@ -29,6 +30,9 @@ updated: 2026-05-08
 - [[security-credential-management]] — 安全与凭证管理：TruffleHog、n8n 凭证隔离
 - [[persistent-agent-patterns]] — 持久 Agent 核心模式：Heartbeat、自愈、多 Agent 协调
 - [[alert-center-patterns]] — LLM Alert Center：告警归并、根因分析、团队路由
+- [[hermes-agent-learning-loop]] — Hermes 闭环学习系统：GEPA 引擎驱动的自我进化机制
+- [[hermes-agent-memory-architecture]] — Hermes 四层记忆架构：Working → Episodic → MEMORY.md → USER.md
+- [[hermes-agent-skills-system]] — Hermes 技能系统：自动沉淀解题模式为可复用 Skill
 
 ---
 
