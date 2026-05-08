@@ -103,4 +103,4 @@ Weekly:
 - [[openclaw]] — platform this security model is built on
 - [[multi-agent-orchestration]] — n8n proxy pattern details
 - [[scheduled-automation]] — automated security audits in cron schedule
-- [[infra]] — infrastructure context where SSH access amplifies risk
+- [[persistent-agent-patterns]] — infrastructure context where SSH access amplifies risk

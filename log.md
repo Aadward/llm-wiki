@@ -10,12 +10,11 @@
 - Structure created with SCHEMA.md, index.md, log.md
 - Initial ingest: OpenClaw Cookbook (42 use cases)
 
-## [2026-05-08] ingest | OpenClaw Cookbook
-- Created: raw/articles/openclaw-cookbook-2026-02.md (source copy)
-- Created: entities/openclaw.md
-- Created: concepts/multi-agent-orchestration.md
-- Created: concepts/memory-knowledge-systems.md
-- Created: concepts/scheduled-automation.md
-- Created: concepts/security-credential-management.md
-- Created: summaries/openclaw-cookbook-summary.md
-- Updated: index.md (added 5 new entries)
+## [2026-05-08] update | Wiki reorganization
+- Restructured use cases: moved from `concepts/usecases/` to `usecases/`
+- Rewrote all 42 use case pages as lightweight index pages (frontmatter + summary + link to raw, no full content duplication)
+- Created `usecases/index.md` with category navigation
+- Added 2 new concept pages: `persistent-agent-patterns.md`, `alert-center-patterns.md`
+- Rewrote `index.md` as full navigation page with table of contents
+- Fixed broken links: `[[infra]]` → `[[persistent-agent-patterns]]`, `[[raw/articles/]]` → plain text
+- Deleted `concepts/usecases/` (had full duplicate content)
