@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 7e040f45e47e40ae1f78ff5eff52061dc7d53e71db761562c1f67c9619ba2dbb
+---
+
 # Personal Knowledge Base (RAG)
 
 You read articles, tweets, and watch videos all day but can never find that one thing you saw last week. Bookmarks pile up and become useless.

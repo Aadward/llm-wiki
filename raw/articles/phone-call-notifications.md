@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: c2c16ed139146d75b81463672df36ef6dbac479630050a85666f3b95ac989cf9
+---
+
 # Phone Call Notifications
 
 Your agent already monitors things for you — stocks, emails, smart home, calendars — but notifications are easy to ignore. Push notifications pile up. Chat messages get buried. For the stuff that actually matters, you need something you can't swipe away.

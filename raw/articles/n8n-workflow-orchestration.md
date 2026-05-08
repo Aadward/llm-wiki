@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 8798d581c5195f1a551b5298129f4bfbbfb9bbdba1bc58a3961c682a9d5ba097
+---
+
 # OpenClaw + n8n Workflow Orchestration
 
 Letting your AI agent directly manage API keys and call external services is a recipe for security incidents. Every new integration means another credential in `.env.local`, another surface for the agent to accidentally leak or misuse.

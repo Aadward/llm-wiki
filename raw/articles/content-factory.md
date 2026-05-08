@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 7235c19543e1ea424947409dca23d97d7a19013fe04e51c6b917fb1346ea7270
+---
+
 # Multi-Agent Content Factory
 
 You're a content creator juggling research, writing, and design across multiple platforms. Each step — finding trending topics, writing scripts, generating thumbnails — eats hours of your day. What if a team of specialized agents handled all of it overnight?

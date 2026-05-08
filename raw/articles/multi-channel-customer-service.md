@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 9edbc100b577ce398f56f15a266e20b5186ed5a63210889a7d4fa98d9fbd8f50
+---
+
 # Multi-Channel AI Customer Service Platform
 
 Small businesses juggle WhatsApp, Instagram DMs, emails, and Google Reviews across multiple apps. Customers expect instant responses 24/7, but hiring staff for round-the-clock coverage is expensive.

@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: ea95a1ebf4d2de635ee7eba3c155b12e49ab4adb9b937f898668ed8f2f958f91
+---
+
 # Autonomous Project Management with Subagents
 
 Managing complex projects with multiple parallel workstreams is exhausting. You end up context-switching constantly, tracking status across tools, and manually coordinating handoffs.

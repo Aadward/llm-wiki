@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 23284927a7f5b6eebe4623b0434f70f5e48683a40e30bc00f94d28a218167075
+---
+
 # Phone-Based Personal Assistant
 
 ## Pain Point

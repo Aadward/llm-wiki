@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-open-usecases
+ingested: 2026-05-09
+sha256: f618a48af25bc4afa42ffd14d0e190861d19c574d22d44dcd2a2b701c4abe9a6
+---
+
 # Multi-Channel Personal Assistant
 
 Context-switching between apps to manage tasks, schedule events, send messages, and track work is exhausting. You want one interface that routes to all your tools.

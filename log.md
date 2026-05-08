@@ -37,3 +37,20 @@
 - 新增 concepts/openclaw-2026-plugin-sdk.md — 插件SDK重构概念页
 - 新增 concepts/openclaw-2026-background-tasks-flows.md — 后台任务流概念页
 - 更新 index.md — 补充 2 个新 Core Concepts 条目
+
+## [2026-05-09] lint + fix | Wiki 结构全面修复
+- 47 个 raw/articles/*.md 文件补充 frontmatter（source_url、ingested、sha256）
+- 2 个 placeholder sha256 文件（hermes-agent-overview/use-cases）重新计算真实哈希
+- 42 个 usecases/*.md 文件修正 frontmatter 字段名：source: → sources:
+- index.md 全面更新：补充 10 个新 Core Concepts 条目（h1-h7 + o1-o3），重构分类结构（OpenClaw / Hermes / 跨框架），补充 Raw Sources 条目，更新 Last updated + Total pages
+- 本次新增 10 个概念页面：
+  - concepts/hermes-agent-source-code-architecture.md
+  - concepts/hermes-agent-mcp-integration.md
+  - concepts/hermes-agent-soul-agents-md.md
+  - concepts/hermes-agent-voice-mode.md
+  - concepts/hermes-agent-profiles-multi-instance.md
+  - concepts/hermes-agent-skill-library.md
+  - concepts/hermes-agent-troubleshooting.md
+  - concepts/openclaw-source-code-architecture.md
+  - concepts/openclaw-hermes-comparison.md
+  - concepts/openclaw-clawhub.md

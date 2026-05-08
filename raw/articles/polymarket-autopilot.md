@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: a9935c93c7b31c08fa8076db788bc102044ddf086b4c97e1d3deea42db1398b4
+---
+
 # Polymarket Autopilot: Automated Paper Trading
 
 Manually monitoring prediction markets for arbitrage opportunities and executing trades is time-consuming and requires constant attention. You want to test and refine trading strategies without risking real capital.

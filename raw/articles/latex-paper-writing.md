@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 98f0b890336156bd3c7f42a2c20c5fde01b9d7d1dd0bec2b9650b9e0495e4c38
+---
+
 # LaTeX Paper Writing
 
 Setting up a local LaTeX environment is painful — installing TeX Live takes gigabytes, debugging compilation errors is tedious, and switching between your editor and PDF viewer breaks flow. You want to write and compile LaTeX papers conversationally without any local setup.

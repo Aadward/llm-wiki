@@ -1,7 +1,7 @@
 ---
-source_url: https://so.html5.qq.com/page/real/search_news?docid=70000021_63269c1ee7e52652
-ingested: 2026-05-08
-sha256:c2290f78c288b610efbb24e608a6033dc5774037bea9db2bff063f9a8a0bf1e4
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 8222b786bc8e4eefa032c479b0287baac70651549521fed4fde49ca891ed2719
 ---
 
 # OpenClaw 大版本更新：全面接入 GPT-5.4 与 Claude Vertex

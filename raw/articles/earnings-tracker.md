@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: c9047a497849eb261e0b2bd5ae88e01b581da500220722053aa970f610df7b51
+---
+
 # AI-Powered Earnings Tracker
 
 Following earnings season across dozens of tech companies means checking multiple sources and remembering report dates. You want to stay on top of AI/tech earnings without manually tracking every company.

@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 2959a7485ed21a03f851fc7d3f371b54fdca9f03ad4ae48ed045da2e7cbfb529
+---
+
 # Multi-Source Tech News Digest
 
 Automatically aggregate, score, and deliver tech news from 109+ sources across RSS, Twitter/X, GitHub releases, and web search — all managed through natural language.

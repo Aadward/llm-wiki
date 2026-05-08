@@ -2,7 +2,7 @@
 title: "Personal CRM with Automatic Contact Discovery"
 summary: "Keeping track of who you've met, when, and what you discussed is impossible to do manually. Important follow-ups slip through the cracks, and you forget context before important meetings...."
 tags: [personal-crm, use-case, openclaw]
-source: raw/articles/personal-crm.md
+sources: [raw/articles/personal-crm.md]
 created: 2026-05-08
 ---
 

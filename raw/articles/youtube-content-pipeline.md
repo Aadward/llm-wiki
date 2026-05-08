@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 96d09874856d1c4fe6b5b91f278a989a755bc91564334f0f37dca31d1634d29d
+---
+
 # YouTube Content Pipeline
 
 As a daily YouTube creator, finding fresh, timely video ideas across the web and X/Twitter is time-consuming. Tracking what you've already covered prevents duplicates and helps you stay ahead of trends.

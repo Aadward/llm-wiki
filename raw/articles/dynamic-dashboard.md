@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: a5a8cf6fec7f1addcf9bd1fe759bcb01a0b17799c2ad47043f3b0b5c682d59da
+---
+
 # Dynamic Dashboard with Sub-agent Spawning
 
 Static dashboards show stale data and require constant manual updates. You want real-time visibility across multiple data sources without building a custom frontend or hitting API rate limits.

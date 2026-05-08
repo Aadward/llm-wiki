@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: ec889b1e698c54f940c1f808a7d86486f1c196df41cafe94078914251d0a2ac4
+---
+
 # Daily Reddit Digest
 Run a daily digest everyday to give you the top performing posts from your favourite subreddits.
 

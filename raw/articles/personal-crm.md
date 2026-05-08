@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 0bee3367294b3db6ca8e0afab2f54da7ebc4b683199a4a84c706c65cc1232587
+---
+
 # Personal CRM with Automatic Contact Discovery
 
 Keeping track of who you've met, when, and what you discussed is impossible to do manually. Important follow-ups slip through the cracks, and you forget context before important meetings.

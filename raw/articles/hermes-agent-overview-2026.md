@@ -1,7 +1,7 @@
 ---
-source_url: https://hermes-agent.nousresearch.com/
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
 ingested: 2026-05-09
-sha256: <computed-from-body>
+sha256: 0294dbc9c9e839662edef03589ef73841a5a0f8c86b2984306c9422411171d6f
 ---
 
 # Hermes Agent 官方概览（2026）

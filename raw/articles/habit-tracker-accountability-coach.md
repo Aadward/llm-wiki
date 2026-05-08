@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: fc7aee1d0694d05191370fd92deec0cb3a5e959ba08e726b5c79e6b2f2267866
+---
+
 # Habit Tracker & Accountability Coach
 
 You've tried every habit tracker app out there. They all work for a week, then you stop opening them. The problem isn't the app — it's that tracking habits is passive. What if your agent actively reached out to you, asked how your day went, and adapted its approach based on whether you're on a streak or falling off?

@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: e430789dbd026fc8e6b77ece18bf025210f0a6f8cc16e11cf32d02845dff7108
+---
+
 # HF Papers Research Discovery
 
 Keeping up with ML research means refreshing Hugging Face Papers daily, scanning dozens of titles, clicking into each one for the abstract, and manually cross-referencing GitHub repos. You want a conversational way to discover, triage, and deep-read trending papers without leaving your workspace.

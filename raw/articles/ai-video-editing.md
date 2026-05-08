@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 3dd13b34716c11b87c6049380d67cea6cbde7491815d6b6e421098ca8127baf9
+---
+
 # AI Video Editing via Chat
 
 Editing videos usually means opening a timeline editor, dragging clips around, and clicking through menus. For repetitive edits — trimming intros, adding subtitles to a batch of clips, adjusting color on 10 videos — that manual loop eats hours.

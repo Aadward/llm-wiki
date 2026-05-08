@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 12c33fa3fbff6e22a316a4a0ed1df41587c54e5fed7cbefffde2dbc96b9833f3
+---
+
 # arXiv Paper Reader
 
 Reading arXiv papers means downloading PDFs, losing context when switching between papers, and struggling to parse dense LaTeX notation. You want to read, analyze, and compare papers conversationally without leaving your workspace.

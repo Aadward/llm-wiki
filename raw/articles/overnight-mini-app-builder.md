@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 001bb039d84180a4ae66a51f4d250855333ddce5a539425b22d1398a98077456
+---
+
 # Goal-Driven Autonomous Tasks
 
 Your AI agent is powerful but reactive — it only works when you tell it what to do. What if it knew your goals and proactively came up with tasks to move you closer to them every single day, without being asked?

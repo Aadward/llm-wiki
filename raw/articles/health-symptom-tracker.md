@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 84c9b1021176f6f9b5d68f093f92699a8432c0e50b48743e452d2d979a6c1c13
+---
+
 # Health & Symptom Tracker
 
 Identifying food sensitivities requires consistent logging over time, which is tedious to maintain. You need reminders to log and analysis to spot patterns.

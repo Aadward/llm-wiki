@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 6446f3f909707b91d4bab19507fc6b1345ceab21537ad6a7e7a9d15a4d807258
+---
+
 # Todoist Task Manager: Agent Task Visibility
 Maximize transparency for long-running agentic workflows by syncing internal reasoning and progress logs directly to Todoist.
 

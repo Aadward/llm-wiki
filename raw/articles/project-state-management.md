@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 30e6edbc8ab2270ecf8361195196f2b41603b0bf06a7f58691efb7ca56e23c33
+---
+
 # Project State Management System: Event-Driven Alternative to Kanban
 
 Traditional Kanban boards are static and require manual updates. You forget to move cards, lose context between sessions, and can't track the "why" behind state changes. Projects drift without clear visibility.

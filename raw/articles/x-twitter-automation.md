@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 182c134209aa098f9fd5f9c608bfeef694c15d870e8c208995f273aed9d95699
+---
+
 # X/Twitter Automation from Chat
 
 Full X/Twitter automation through natural language — post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts, all from your OpenClaw chat.

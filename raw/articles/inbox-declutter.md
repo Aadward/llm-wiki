@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 7051c20a721cd35774714b043d45bf16b003581a340102a6317d2fa47ee8f64b
+---
+
 # Inbox De-clutter
 
 Newsletters can take up the inbox like nothing else. Often times they pile-up without being opened at all. 

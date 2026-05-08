@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 14f714fc13f35e991fdf61f6f69e8113cd47d9a7fe597299a5c11aac09e3d1c7
+---
+
 # Pre-Build Idea Validator
 
 Before OpenClaw starts building anything new, it automatically checks whether the idea already exists across GitHub, Hacker News, npm, PyPI, and Product Hunt — and adjusts its approach based on what it finds.

@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 7f6b1e095ce03481829ca703c0b0cb06f34ab5c2bddd08b853184b84e0090539
+---
+
 # OpenClaw Cookbook: Best Practices from 42 Production Use Cases
 
 > A practical guide to building powerful AI agent workflows with OpenClaw, distilled from real-world experience across 42 community-contributed use cases.

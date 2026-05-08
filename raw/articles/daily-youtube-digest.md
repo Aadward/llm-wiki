@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: f2245fbb976e818a7e7bc47f731fe14d4b4e68e49a56aa0193726a9a040ff88d
+---
+
 # Daily YouTube Digest
 
 Start your day with a personalized summary of new videos from your favorite YouTube channels — no more missing content from creators you actually want to follow.

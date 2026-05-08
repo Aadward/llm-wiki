@@ -1,7 +1,7 @@
 ---
-source_url: https://blog.csdn.net/wal1314520/article/details/159738904
-ingested: 2026-05-08
-sha256:431e6266a2dcd0da666d3e080280fd0c8933d7ded0330600339bf9442330e322
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 5270765909ecda998ec9917b041f746a8966c5e476424ca43c0e78c2f3b6d43e
 ---
 
 # OpenClaw 2026.3.31 版本更新：安全加固、后台任务管理增强

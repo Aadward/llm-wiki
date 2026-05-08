@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: b6950e7029dcf6fcd4640fb3b5afded2ab5fabae20f6b080c7fc7e8578d99d28
+---
+
 # Self-Healing Home Server & Infrastructure Management
 
 Running a home server means being on-call 24/7 for your own infrastructure. Services go down at 3 AM, certificates expire silently, disk fills up, and pods crash-loop — all while you're asleep or away.

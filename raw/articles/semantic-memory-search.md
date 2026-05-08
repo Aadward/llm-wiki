@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 29ac9c52745024282f5e198bdb5afa77adf2363c4a29d83e8affca1ce61bcd1d
+---
+
 # Semantic Memory Search
 
 OpenClaw's built-in memory system stores everything as markdown files — but as memories grow over weeks and months, finding that one decision from last Tuesday becomes impossible. There is no search, just scrolling through files.

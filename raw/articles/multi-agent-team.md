@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 9655c5d75990f263ab0a1e0bb4657b008b49e9d841bca3b12fe9ab4da32c2be3
+---
+
 # Multi-Agent Specialized Team (Solo Founder Setup)
 
 Solo founders wear every hat — strategy, development, marketing, sales, operations. Context-switching between these roles destroys deep work. Hiring is expensive and slow. What if you could spin up a small, specialized team of AI agents, each with a distinct role and personality, all controllable from a single chat interface?

@@ -1,3 +1,9 @@
+---
+source_url: https://github.com/hesamsheikh/awesome-openclaw-usecases
+ingested: 2026-05-09
+sha256: 91c5b3d3de22712ef36dd7e1f098b12b0b377e4ba1b648ff510501a296e2e120
+---
+
 # Autonomous Educational Game Development Pipeline
 
 ## Pain Point
