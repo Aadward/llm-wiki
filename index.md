@@ -21,6 +21,8 @@ updated: 2026-05-08
 
 ## Core Concepts
 
+- [[openclaw-2026-background-tasks-flows]] — 后台任务管理 + Flows CLI：SQLite 分类账、任务感知与恢复（2026.3.31）
+- [[openclaw-2026-plugin-sdk]] — 插件系统重构：旧 extension-api 废弃、plugin-sdk 启用、Context Engine（2026.3）
 - [[multi-agent-orchestration]] — 多 Agent 协作模式：CEO Pattern、Specialized Team、Chained Pipeline
 - [[memory-knowledge-systems]] — 记忆与知识系统：Markdown Memory、语义搜索、RAG 知识库
 - [[scheduled-automation]] — 定时自动化：Crontab 设计、Morning Briefing、Digest 模式
