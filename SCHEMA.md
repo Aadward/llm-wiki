@@ -24,6 +24,12 @@ type: schema
 - 新页面必须添加到 `index.md` 对应章节
 - 所有操作必须追加到 `log.md`
 
+### Obsidian 兼容
+- `[[wikilinks]]` 在 Obsidian 中渲染为可点击链接
+- 安装 Dataview 插件后可通过 frontmatter 查询（如 `TABLE tags FROM "entities" WHERE contains(tags, "agent")`）
+- 附件文件夹设为 `raw/assets/`，图片通过 `![[image.png]]` 引用
+- 启用 "Wikilinks" 设置（默认开启）
+
 ### 来源标注
 - 综合 3+ 来源的页面，在每个 claims 段落后附加 `^[raw/articles/source-file.md]` 溯源标记
 - 单来源页面 `sources:` frontmatter 足够
@@ -107,7 +113,7 @@ contradictions: [other-page-slug]
 新信息与现有内容冲突时：
 1. 检查日期 — 较新的来源通常覆盖较旧的
 2. 真正矛盾时，注明双方立场和来源
-3. 在 frontmatter 中标记：`contradictions: [page-name]`
+3. 在 frontmatter 中标记：`contradictions: [other-page-slug]`
 4. 在 lint 报告中标记给用户审核
 
 ## Archive Policy
