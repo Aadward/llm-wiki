@@ -54,3 +54,13 @@
   - concepts/openclaw-source-code-architecture.md
   - concepts/openclaw-hermes-comparison.md
   - concepts/openclaw-clawhub.md
+
+## [2026-05-09] ingest | OpenClaw v2026.4.5 + v2026.3.11 + Hermes Agent v0.12.0 版本学习
+- 新增 raw/articles/openclaw-v2026-4-5-release.md — v2026.4.5 原始素材（多媒体、/dreaming、Prompt Cache）
+- 新增 raw/articles/openclaw-v2026-3-11-release.md — v2026.3.11 原始素材（安全强化、Immutable Release）
+- 新增 raw/articles/hermes-agent-v0-12-release.md — Hermes v0.12.0 原始素材（斜杠指令、多会话）
+- 新增 concepts/openclaw-v2026-4-5-release.md — OpenClaw v2026.4.5 概念页
+- 新增 concepts/openclaw-v2026-3-11-release.md — OpenClaw v2026.3.11 安全版概念页
+- 新增 concepts/hermes-agent-v0-12-release.md — Hermes v0.12.0 版本演进页
+- 更新 index.md — 添加 3 个新 Core Concepts 条目，Total pages: 69 → 72
+- 冲突检测：无冲突（两项目定位清晰，无重叠覆盖）

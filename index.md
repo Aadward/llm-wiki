@@ -25,6 +25,8 @@ updated: 2026-05-09
 ### OpenClaw
 - [[openclaw-2026-background-tasks-flows]] — 后台任务管理 + Flows CLI：SQLite 分类账、任务感知与恢复（2026.3.31）
 - [[openclaw-2026-plugin-sdk]] — 插件系统重构：旧 extension-api 废弃、plugin-sdk 启用、Context Engine（2026.3）
+- [[openclaw-2026-3-11-release]] — v2026.3.11 安全强化版：WebSocket 源验证、插件隔离、session 沙盒、Memory 图像索引（2026-03-12）
+- [[openclaw-2026-4-5-release]] — v2026.4.5 多媒体版：图片/音频进入核心、/dreaming 可用、任务进度可见、Prompt Cache 优化（2026-04-06）
 - [[openclaw-source-code-architecture]] — OpenClaw 源码架构：Core/Memory/Heartbeat/Session 四大机制深度解析
 - [[openclaw-hermes-comparison]] — OpenClaw ↔ Hermes 深度对比：网关模式 vs 引擎模式，356k vs 74k Stars
 - [[openclaw-clawhub]] — ClawHub 技能生态：13000+ 技能、热门推荐、中国镜像、CLI 命令
@@ -41,6 +43,7 @@ updated: 2026-05-09
 - [[hermes-agent-profiles-multi-instance]] — Profiles 多实例：HERMES_HOME 隔离、Kanban 多 Agent 协作
 - [[hermes-agent-skill-library]] — 官方技能库：80 技能、三级渐进式、skill install 流程
 - [[hermes-agent-troubleshooting]] — 排错指南：10 类报错全覆盖、hermes doctor 诊断三步法
+- [[hermes-agent-v0-12-release]] — v0.12.0 版本发布：斜杠指令完整化、多会话并行、版本演进时间线（2026-04-30）
 
 ### 跨框架通用
 - [[multi-agent-orchestration]] — 多 Agent 协作模式：CEO Pattern、Specialized Team、Chained Pipeline
@@ -106,4 +109,4 @@ updated: 2026-05-09
 
 ---
 
-*Last updated: 2026-05-09 | Total pages: 69*
+*Last updated: 2026-05-09 | Total pages: 72*
