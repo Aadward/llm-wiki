@@ -33,6 +33,7 @@ updated: 2026-05-08
 - [[hermes-agent-learning-loop]] — Hermes 闭环学习系统：GEPA 引擎驱动的自我进化机制
 - [[hermes-agent-memory-architecture]] — Hermes 四层记忆架构：Working → Episodic → MEMORY.md → USER.md
 - [[hermes-agent-skills-system]] — Hermes 技能系统：自动沉淀解题模式为可复用 Skill
+- [[hermes-agent-best-practices]] — Hermes Agent 最佳实践：基于社区 Use Cases 总结的工程模式
 
 ---
 

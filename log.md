@@ -10,12 +10,14 @@
 - Structure created with SCHEMA.md, index.md, log.md
 - Initial ingest: OpenClaw Cookbook (42 use cases)
 
-## [2026-05-09] ingest | Hermes Agent 调研与 Wiki 更新
+## [2026-05-09] ingest | Hermes Agent 深度调研：最佳实践模式总结
 - 新增 entities/hermes-agent.md — Hermes Agent 实体页（概述、定位、对比）
 - 新增 concepts/hermes-agent-learning-loop.md — 闭环学习系统与 GEPA 引擎
 - 新增 concepts/hermes-agent-memory-architecture.md — 四层记忆架构详解
 - 新增 concepts/hermes-agent-skills-system.md — 技能系统机制
-- 新增 raw/articles/hermes-agent-overview-2026.md — 原始素材
+- 新增 concepts/hermes-agent-best-practices.md — 工程师视角最佳实践（含 Use Cases 分层、成本优化、安全配置）
+- 新增 raw/articles/hermes-agent-overview-2026.md — 官方概览原始素材
+- 新增 raw/articles/hermes-agent-use-cases-2026.md — 官方 User Stories 原始素材（99 个案例）
 - 更新 index.md — 添加 Hermes Agent 相关条目
 - Restructured use cases: moved from `concepts/usecases/` to `usecases/`
 - Rewrote all 42 use case pages as lightweight index pages (frontmatter + summary + link to raw, no full content duplication)
