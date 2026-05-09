@@ -111,4 +111,8 @@
 - 核心发现：FTS5 在 Hermes 中服务 L2 Episodic Memory 检索；与 OpenClaw SQLite-vec 的关键差异（BM25 无语义 vs 向量语义）；session_search 弥补语义不足；BM25 理解同义词的局限
 - 新增 concepts/fts5-full-text-search.md — BM25 原理 + 局限性 + session_search 补偿 + 3 条知识断层
 
-## [2026-05-11] study | C1 MCP 协议深度理解 — 进行中
+## [2026-05-11] study | C1 MCP 协议深度理解
+- 核心发现：MCP 本质是"USB 标准"（解耦 Agent 和外部系统）；白名单局限（MCP Server 被控则白名单失效）；分层防御是唯一出路；最佳实践理念（最小暴露原则）
+- 新增 concepts/mcp-protocol-deep-dive.md — USB 类比 + 白名单局限 + 分层防御 + 5 条知识断层
+
+## [2026-05-11] study | C2 ReAct Loop 范式 — 进行中
