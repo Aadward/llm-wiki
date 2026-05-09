@@ -83,4 +83,8 @@
 - 核心发现：Gateway 纯路由层（不产生智能）vs Hermes Engine-First；WebSocket 实时双向设计意图；八大 MD 文件注入体系；Flows CLI 任务可见性是 Hermes 最缺失的能力；安全哲学：OpenClaw fail-closed vs Hermes 默认允许
 - 新增 concepts/openclaw-gateway-architecture.md — Gateway 三层架构 + Flows + 安全对比 + 6 条知识断层
 
-## [2026-05-11] study | A4 OpenClaw Flows CLI — 进行中
+## [2026-05-11] study | A4 OpenClaw Flows CLI
+- 核心发现：线性是有意选择；SQLite 分类账是运维思维而非功能；与 Hermes Cron 本质差异（可见性 vs 自动完成）；doctor 修复的"任务损坏是常态"哲学
+- 新增 concepts/openclaw-flows-cli.md — Flows 设计哲学 + 分类账 + 6 条知识断层
+
+## [2026-05-11] study | A5 两者记忆系统对比 — 进行中
