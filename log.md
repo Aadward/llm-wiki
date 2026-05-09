@@ -91,4 +91,8 @@
 - 核心发现：记忆的运行时状态 vs 文件系统状态；Hermes 整轮提交 vs OpenClaw Append-only；FTS5 vs SQLite-vec 检索差异；USER.md 独立文件 vs 混在 MEMORY.md；主动性哲学对立（系统自动管 vs 人类直接掌控）
 - 新增 concepts/memory-systems-comparison.md — 7 个对比维度 + 6 条知识断层
 
-## [2026-05-11] study | B1 选型决策树 — 进行中
+## [2026-05-11] study | B1 选型决策树
+- 核心发现：三条分叉轴（安全 vs 灵活、可见性 vs 自动化、技能人主 vs 机主）；一句话定位（掌控 vs 进化）；混合使用是被低估的场景（OpenClaw 网关 + Hermes 执行引擎）
+- 新增 concepts/openclaw-hermes-decision-tree.md — 决策树 + 三轴分叉 + 混合架构 + 选型矩阵 + 5 条知识断层
+
+## [2026-05-11] study | B2 多 Agent 协作模式对比 — 进行中
