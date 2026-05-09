@@ -87,4 +87,8 @@
 - 核心发现：线性是有意选择；SQLite 分类账是运维思维而非功能；与 Hermes Cron 本质差异（可见性 vs 自动完成）；doctor 修复的"任务损坏是常态"哲学
 - 新增 concepts/openclaw-flows-cli.md — Flows 设计哲学 + 分类账 + 6 条知识断层
 
-## [2026-05-11] study | A5 两者记忆系统对比 — 进行中
+## [2026-05-11] study | A5 两者记忆系统对比
+- 核心发现：记忆的运行时状态 vs 文件系统状态；Hermes 整轮提交 vs OpenClaw Append-only；FTS5 vs SQLite-vec 检索差异；USER.md 独立文件 vs 混在 MEMORY.md；主动性哲学对立（系统自动管 vs 人类直接掌控）
+- 新增 concepts/memory-systems-comparison.md — 7 个对比维度 + 6 条知识断层
+
+## [2026-05-11] study | B1 选型决策树 — 进行中
