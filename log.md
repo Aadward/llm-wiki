@@ -99,4 +99,8 @@
 - 核心发现：OpenClaw CEO Pattern vs Hermes Kanban Orchestrator；共享竞态问题（edit 静默失败）；n8n Proxy Pattern 凭证隔离是 Hermes 最缺失的；Agent 间通信协议均未文档化
 - 新增 concepts/multi-agent-collaboration.md — 三种协作模式 + 竞态问题 + 6 条知识断层
 
-## [2026-05-11] study | B3 安全模型横向对比 — 进行中
+## [2026-05-11] study | B3 安全模型横向对比
+- 核心发现：fail-closed vs default-allow+callback 哲学对立；审批时机差异（配置阶段 vs 运行时）；n8n Proxy Pattern 凭证永不外泄是 Hermes 最缺失的；secret redaction 层面不同（输出层 vs 环境层）
+- 新增 concepts/security-model-comparison.md — 安全哲学对比 + 审批模型 + 凭证管理 + 8 条知识断层
+
+## [2026-05-11] study | B4 成本优化策略对比 — 进行中
