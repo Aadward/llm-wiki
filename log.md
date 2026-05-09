@@ -120,3 +120,34 @@
 - 新增 concepts/react-loop-paradigm.md — ReAct 原理 + 两系统对比 + 3 条知识断层
 
 ## [2026-05-11] batch commit | D 轴专题跳过说明 + 收尾
+
+## [2026-05-11] lint + reorganize | Wiki 阶段性整理：去重 + 关联连接 + 阶段总结
+### 发现的问题
+1. **技能系统重复**（×2）：
+   - `hermes-agent-skills-system.md` — 底层机制（触发条件、生成流程、Curator 生命周期）
+   - `hermes-agent-skill-library.md` — 官方生态（648 技能、CLI 命令、使用示例）
+   - **处理**：在 skills-system.md 添加"本文定位说明"，明确两者互补关系
+
+2. **记忆系统重复**（×3）：
+   - `memory-knowledge-systems.md` — OpenClaw 方案（Layer 1-4）
+   - `hermes-agent-memory-architecture.md` — Hermes 方案（4 层架构）
+   - `memory-systems-comparison.md` — 深度对比（7 维度）
+   - **处理**：在 memory-knowledge-systems.md 添加"系列导航：记忆系统三篇"，三篇合一系列
+
+3. **Flows 重复**（×2）：
+   - `openclaw-2026-background-tasks-flows.md` — 后台任务（任务感知与恢复）
+   - `openclaw-flows-cli.md` — Flows CLI（线性设计哲学、SQLite 分类账）
+   - **处理**：在 background-tasks-flows.md 的 Flows CLI 章节添加"详见：[[openclaw-flows-cli]]"
+
+4. **Multi-Agent 重复**（×2）：
+   - `multi-agent-orchestration.md` — 通用模式（CEO Pattern、n8n Proxy）
+   - `multi-agent-collaboration.md` — OpenClaw ↔ Hermes 深度对比（3 种协作模式、竞态问题）
+   - **处理**：在 multi-agent-orchestration.md 的 Related 段添加深度对比链接
+
+### index.md 全面重构
+- 新增**学习阶段总结**表格（A/B/C/D 四轴），快速把握学习脉络
+- 重新分组：**Hermes 深度原理** → **Hermes 配置与集成** → **OpenClaw ↔ Hermes 对比** → **OpenClaw 核心机制** → **跨框架通用概念** → **版本演进** → **安全与凭证**
+- 每个分组内的重复项添加 `[[★ 说明]]` 注释，指明每篇的独特价值
+- Flows 和 Multi-Agent 体系分组更清晰（各自独立分组而非混入跨框架）
+- **Total pages: 72 → 76**（新增 4 个定位说明/系列导航段落）
+- 相关概念章节添加了明确的"关联"和"系列"导航标记

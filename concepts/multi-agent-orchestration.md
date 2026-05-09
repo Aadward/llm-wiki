@@ -103,3 +103,5 @@ OpenClaw → webhook call (no creds) → n8n Workflow (locked, with API keys) �
 - [[openclaw]] — the platform this pattern runs on
 - [[scheduled-automation]] — cron jobs that power multi-agent workflows
 - [[security-credential-management]] — n8n isolation and credential best practices
+- [[multi-agent-collaboration]] — OpenClaw ↔ Hermes 多 Agent 协作模式深度对比（三种协作模式、竞态问题、凭证隔离）[[★ 深度对比]]
+- [[hermes-agent-profiles-multi-instance]] — Hermes Profiles 与多实例管理 [[★ Hermes 篇]]

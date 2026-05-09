@@ -98,8 +98,19 @@ hermes skills list
 | 自我优化 | 部分 | ✅ GEPA 引擎驱动 |
 | 加载方式 | 代码级集成 | 文档级加载 |
 
+---
+
+## 本文定位说明
+
+本文档讲述**技能系统的底层机制**（技能是什么、如何生成、Curator 生命周期）。
+
+**与 [[hermes-agent-skill-library|官方技能库]] 的区别**：
+- 本文：技能如何工作（生成→存储→加载→优化机制）
+- skill-library：648 个官方/社区技能的使用方法和 CLI 命令
+
 ## 相关概念
 
 - [[hermes-agent]] — 整体框架
-- [[hermes-agent-learning-loop]] — 闭环学习系统
+- [[hermes-agent-learning-loop]] — 闭环学习系统（技能生成的触发引擎）
+- [[hermes-agent-skill-library]] — 官方技能库生态和使用命令 [[★ 互补阅读]]
 - [[scheduled-automation]] — 定时自动化（技能应用场景）

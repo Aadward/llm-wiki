@@ -102,3 +102,15 @@ Include:
 - [[openclaw]] — platform with built-in memory
 - [[scheduled-automation]] — cron that syncs/procresses memory files
 - [[multi-agent-orchestration]] — how agents share state via memory files
+- [[hermes-agent-memory-architecture]] — Hermes 四层记忆架构 [[★ OpenClaw 对应篇]]
+- [[memory-systems-comparison]] — OpenClaw ↔ Hermes 记忆系统深度对比 [[★ 系列总结]]
+
+---
+
+## 系列导航：记忆系统三篇
+
+|| 主题 | 内容 |
+||------|------|
+| **本文** | OpenClaw 的记忆方案：Markdown Memory、语义搜索、RAG |
+| **[[hermes-agent-memory-architecture|Hermes 四层记忆]]** | Hermes 方案：Working → Episodic → MEMORY.md → USER.md |
+| **[[memory-systems-comparison|记忆系统对比]]** | 两者的 7 维度横向对比 |

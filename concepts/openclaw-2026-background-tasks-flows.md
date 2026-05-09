@@ -32,7 +32,7 @@ confidence: high
 
 ## Flows CLI（任务流控制界面）
 
-首个线性任务流控制界面：
+首个线性任务流控制界面，详见：[[openclaw-flows-cli|Flows CLI 深度解析]]
 
 ```bash
 openclaw flows list    # 列出所有运行中的流
