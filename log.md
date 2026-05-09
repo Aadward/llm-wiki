@@ -103,4 +103,8 @@
 - 核心发现：fail-closed vs default-allow+callback 哲学对立；审批时机差异（配置阶段 vs 运行时）；n8n Proxy Pattern 凭证永不外泄是 Hermes 最缺失的；secret redaction 层面不同（输出层 vs 环境层）
 - 新增 concepts/security-model-comparison.md — 安全哲学对比 + 审批模型 + 凭证管理 + 8 条知识断层
 
-## [2026-05-11] study | B4 成本优化策略对比 — 进行中
+## [2026-05-11] study | B4 成本优化策略对比
+- 核心发现：Hermes 优化 token 量，OpenClaw 优化缓存命中率；Auxiliary Models 节省 40-60% 但依赖任务可拆分；日志膨胀解决思路不同（Context Compressor vs JSONL compaction）
+- 新增 concepts/cost-optimization-comparison.md — 成本结构对比 + Auxiliary Models + 5 条知识断层
+
+## [2026-05-11] study | C3 FTS5 全文检索原理 — 进行中
