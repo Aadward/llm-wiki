@@ -151,3 +151,15 @@
 - Flows 和 Multi-Agent 体系分组更清晰（各自独立分组而非混入跨框架）
 - **Total pages: 72 → 76**（新增 4 个定位说明/系列导航段落）
 - 相关概念章节添加了明确的"关联"和"系列"导航标记
+
+
+## [2026-05-12] study | 新版本扫描: OpenClaw v2026.4.14/3.28 + Hermes v0.8/0.10
+- 研究发现:自上次学习(2026-05-11)后共发现 3 个新版本值得记录
+- 新增 raw/articles/openclaw-v2026-4-14-release.md — v2026.4.14 原始素材
+- 新增 raw/articles/openclaw-v2026-3-28-release.md — v2026.3.28 原始素材(高危安全修复)
+- 新增 raw/articles/hermes-agent-v0-8-v0-10-release.md — Hermes v0.8/v0.10 原始素材
+- 新增 concepts/openclaw-v2026-4-14-release.md — 安全加固+可靠性+性能,89项修复
+- 新增 concepts/openclaw-v2026-3-28-release.md — 路径遍历漏洞修复,高危安全
+- 新增 concepts/hermes-agent-v0-8-v0-10-release.md — Live Model Switching,国内直连
+- 冲突检测:无冲突(均为版本演进内容,与现有知识体系无重叠)
+- 更新 index.md — Total pages: 76 → 79

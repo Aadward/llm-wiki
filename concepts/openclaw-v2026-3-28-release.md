@@ -1,78 +1,42 @@
 ---
 title: OpenClaw v2026.3.28 版本发布
-created: 2026-05-09
-updated: 2026-05-09
+created: 2026-05-12
+updated: 2026-05-12
 type: concept
-tags: [openclaw, release, security, xai-grok, minimax, image-generation, acp, requireApproval]
+tags: [openclaw, release, security, reliability]
 sources: [raw/articles/openclaw-v2026-3-28-release.md]
 confidence: high
 ---
 
 # OpenClaw v2026.3.28 版本发布
 
-## 概述
+## 核心定位
 
-OpenClaw v2026.3.28 发布于 2026 年 3 月 28 日，是 OpenClaw 从"极客玩具"走向"生产工具"的关键转折点。**核心主题：安全阀机制确立 + 搜索能力原生化 + 多模态整合**。
+版本跃迁:v2026.3.24 to v2026.3.28,含多项高危漏洞修复,**建议立即更新**。
 
-## 核心更新
+## 安全更新:多项高危漏洞修复
 
-### 🛡️ requireApproval —— 自主 Agent 的"安全阀"（最重要）
+### 浏览器控制安全加固
 
-**机制**：`before_tool_call` 钩子中新增异步 `requireApproval` 能力。
+**文件上传/下载路径遍历漏洞**
 
-当 Agent 即将执行高危操作（删除文件、发送消息、调用外部 API）时：
-- 系统**暂停执行**，等待用户确认
-- 多渠道审批：
-  - Telegram 按钮
-  - Discord 互动界面
-  - /approve 命令（任意频道）
-  - Exec 审批浮层（控制台 UI）
+- **问题:** 攻击者可通过构造特殊路径字符串,突破 OpenClaw temp 目录限制,读写任意文件
+- **修复:** 限制输出路径到 OpenClaw temp 根目录,阻止路径遍历/逃逸
+- **影响:** 所有使用浏览器自动化功能的用户
 
-**设计意义**：
-- Cisco 安全团队曾记录第三方 Skill 未授权数据外泄案例
-- 引入意味着 OpenClaw 承认：**全自动不等于安全，受控自治才是正道**
-- 这是 OpenClaw 补齐 Hermes 审批机制的重要节点，两者在审批能力上现已相当
+这是 v2026.3.23 以来安全加固路线的重要组成部分。
 
-**背景洞察**：功能出现时机恰好在中国政府限制国企使用 OpenClaw 之后，可能有监管压力背景。
+## Agents 可靠性提升
 
-### 🔍 xAI / Grok 深度整合
+- 子智能体任务调度稳定性增强
+- 任务卡死问题修复
 
-- Grok 搜索能力深度集成
-- 搜索从"外挂功能"升级为"基础设施"
-- 未来 Agent 竞争力 = "能获取多实时的信息来做任务"
+## Memory 优化
 
-### 🖼️ MiniMax 图像生成整合
+- QMD 搜索结果精确度提升
+- 跨进程嵌入运行优化,避免多代理场景下的惊群效应
 
-- 新增 `image-01` 模型支持
-- 同时支持：text-to-image、image-to-text、多模态对话
-- **精简模型目录**：仅保留 M2.7，移除旧版本
-- 版本策略：**不堆砌，而是整合**
+## 关联概念
 
-### 🔗 ACP 多平台"当前对话绑定"
-
-- `/acp spawn codex --bind here` 可将 Discord、BlueBubbles、iMessage 当前聊天直接变成 Codex 工作区
-- 无需创建子线程
-- **"Agent 即界面"理念**：对话本身就是工作台
-
-## 版本演进时间线
-
-| 时间 | 版本 | 关键变化 |
-|------|------|----------|
-| 2025.11 | Clawdbot | 首次发布 |
-| 2026.1.27 | Moltbot | Anthropic 商标投诉，被迫更名 |
-| 2026.1.30 | OpenClaw | 正式更名 |
-| 2026.2.23 | v2026.2.23 | HTTP 安全头、SSRF 策略、配置脱敏 |
-| 2026.3.11 | v2026.3.11 | WebSocket 源验证、插件隔离、session 沙盒（不可变版本）|
-| **2026.3.28** | **v2026.3.28** | **requireApproval 安全阀、Grok 搜索、image-01** |
-| 2026.4.5 | v2026.4.5 | 多媒体进核心、Prompt Cache 优化（见 [[openclaw-v2026-4-5-release]]）|
-
-## OpenClaw ↔ Hermes 审批机制对比
-
-| 维度 | OpenClaw requireApproval | Hermes approval_callback |
-|------|-------------------------|-------------------------|
-| **触发机制** | 异步 before_tool_call 钩子 | 同步回调 |
-| **审批方式** | 多渠道（TG/DC/控制台/命令） | 超时自动拒绝（默认 60s） |
-| **哲学** | fail-closed（默认暂停） | default-allow + callback |
-| **集成深度** | 核心内置 | 回调机制 |
-
-详见：[[security-model-comparison]]
+- [[security-model-comparison]] - OpenClaw 安全模型
+- [[openclaw-gateway-architecture]] - Gateway 架构
