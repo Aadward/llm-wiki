@@ -115,4 +115,8 @@
 - 核心发现：MCP 本质是"USB 标准"（解耦 Agent 和外部系统）；白名单局限（MCP Server 被控则白名单失效）；分层防御是唯一出路；最佳实践理念（最小暴露原则）
 - 新增 concepts/mcp-protocol-deep-dive.md — USB 类比 + 白名单局限 + 分层防御 + 5 条知识断层
 
-## [2026-05-11] study | C2 ReAct Loop 范式 — 进行中
+## [2026-05-11] study | C2 ReAct Loop 范式
+- 核心发现：ReAct 推理+执行交替进行；OpenClaw vs Hermes 的 Loop 实现差异（显式 vs 隐式）；根本性局限（无依赖声明机制，复杂依赖链不稳定）
+- 新增 concepts/react-loop-paradigm.md — ReAct 原理 + 两系统对比 + 3 条知识断层
+
+## [2026-05-11] batch commit | D 轴专题跳过说明 + 收尾
