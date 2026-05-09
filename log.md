@@ -95,4 +95,8 @@
 - 核心发现：三条分叉轴（安全 vs 灵活、可见性 vs 自动化、技能人主 vs 机主）；一句话定位（掌控 vs 进化）；混合使用是被低估的场景（OpenClaw 网关 + Hermes 执行引擎）
 - 新增 concepts/openclaw-hermes-decision-tree.md — 决策树 + 三轴分叉 + 混合架构 + 选型矩阵 + 5 条知识断层
 
-## [2026-05-11] study | B2 多 Agent 协作模式对比 — 进行中
+## [2026-05-11] study | B2 多 Agent 协作模式对比
+- 核心发现：OpenClaw CEO Pattern vs Hermes Kanban Orchestrator；共享竞态问题（edit 静默失败）；n8n Proxy Pattern 凭证隔离是 Hermes 最缺失的；Agent 间通信协议均未文档化
+- 新增 concepts/multi-agent-collaboration.md — 三种协作模式 + 竞态问题 + 6 条知识断层
+
+## [2026-05-11] study | B3 安全模型横向对比 — 进行中
