@@ -75,4 +75,8 @@
 - 诚实列出 6 条知识断层
 - 更新 concepts/hermes-agent-learning-loop.md — 全面重写，整合源码架构文档
 
-## [2026-05-11] study | A2 Hermes AIAgent 消息循环 — 进行中
+## [2026-05-11] study | A2 Hermes AIAgent 消息循环
+- 核心发现：同步循环（有意设计）vs 异步；toolset__tool_name 扁平命名空间；并行工具调用隐含依赖问题；Skills Index 累积性 token 膨胀；整轮提交记忆模式；四个回调机制文档最不透明
+- 新增 concepts/hermes-agent-message-loop.md — 消息循环完整流程图 + 7 个知识点
+
+## [2026-05-11] study | A3 OpenClaw Gateway 架构 — 进行中
