@@ -39,6 +39,24 @@ confidence: high
 - 危险代码必须扫描通过
 - 混合令牌配置直接拒绝
 
+### 2.3 v2026.3.28 新增：requireApproval 安全阀
+
+**重大更新**：v2026.3.28 在 `before_tool_call` 钩子中引入异步 `requireApproval` 能力。
+
+当 Agent 即将执行高危操作（删除文件、发送消息、调用外部 API）时：
+- 系统**暂停执行**，等待用户确认
+- 多渠道审批：
+  - Telegram 按钮
+  - Discord 互动界面
+  - /approve 命令（任意频道）
+  - Exec 审批浮层（控制台 UI）
+
+**意义**：这是 OpenClaw **补齐 Hermes 审批机制的重要节点**，两者现在能力相当：
+- OpenClaw：从纯 fail-closed 进化到"fail-closed + 运行时审批"
+- Hermes：一直有 `approval_callback`，但以"default-allow + callback"为主
+
+详见：[[openclaw-v2026-3-28-release]]
+
 ---
 
 ## 三、Hermes 的 Callback 体系

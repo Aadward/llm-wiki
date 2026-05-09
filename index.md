@@ -72,6 +72,7 @@ updated: 2026-05-11
 
 ### 📈 版本演进
 
+|- [[openclaw-v2026-3-28-release|OpenClaw v2026.3.28]] — 安全阀 requireApproval、Grok 搜索、image-01 多模态整合
 |- [[openclaw-v2026-4-5-release|OpenClaw v2026.4.5]] — 多媒体版：图片/音频进入核心、/dreaming、Prompt Cache 优化
 |- [[openclaw-v2026-3-11-release|OpenClaw v2026.3.11]] — 安全强化版：WebSocket 源验证、插件隔离、session 沙盒
 |- [[hermes-agent-v0-12-release|Hermes v0.12.0]] — 斜杠指令完整化、多会话并行、版本演进时间线
