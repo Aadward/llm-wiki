@@ -64,3 +64,15 @@
 - 新增 concepts/hermes-agent-v0-12-release.md — Hermes v0.12.0 版本演进页
 - 更新 index.md — 添加 3 个新 Core Concepts 条目，Total pages: 69 → 72
 - 冲突检测：无冲突（两项目定位清晰，无重叠覆盖）
+
+## [2026-05-11] study | A1 GEPA 引擎深度研究
+- 研究目标：理解 Hermes GEPA 闭环学习的完整机制
+- 核心发现：
+  - GEPA 存在两个抽象层级：宏观层（Goal-Evaluation-Plan-Action）vs 微观层（Gather-Execute-Process-Assess）
+  - 技能生成触发条件：工具调用 ≥ 5 次 + 任务成功
+  - Skill 设计选择：存储"解题模式"而非"代码片段"，本质是推迟编译到运行时
+  - 与 OpenClaw Heartbeat 的本质差异：被动事后聪明 vs 主动定时巡检
+- 诚实列出 6 条知识断层
+- 更新 concepts/hermes-agent-learning-loop.md — 全面重写，整合源码架构文档
+
+## [2026-05-11] study | A2 Hermes AIAgent 消息循环 — 进行中
