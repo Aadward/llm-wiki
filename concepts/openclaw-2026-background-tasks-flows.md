@@ -1,7 +1,7 @@
 ---
 title: OpenClaw 2026 后台任务与 Flows 系统
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-11
 type: concept
 tags: [agent, automation, infra]
 sources: [raw/articles/openclaw-2026-background-tasks-flows.md]

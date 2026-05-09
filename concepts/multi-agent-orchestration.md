@@ -1,7 +1,7 @@
 ---
 title: Multi-Agent Orchestration
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-11
 type: concept
 tags: [agent, workflow]
 sources: [raw/articles/openclaw-cookbook-2026-02.md]

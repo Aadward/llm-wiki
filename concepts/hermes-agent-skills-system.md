@@ -1,7 +1,7 @@
 ---
 title: Hermes Agent 技能系统
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 type: concept
 tags: [agent, hermes, skill, workflow, automation]
 sources: [raw/articles/hermes-agent-overview-2026.md]
