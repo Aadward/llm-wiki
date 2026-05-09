@@ -79,4 +79,8 @@
 - 核心发现：同步循环（有意设计）vs 异步；toolset__tool_name 扁平命名空间；并行工具调用隐含依赖问题；Skills Index 累积性 token 膨胀；整轮提交记忆模式；四个回调机制文档最不透明
 - 新增 concepts/hermes-agent-message-loop.md — 消息循环完整流程图 + 7 个知识点
 
-## [2026-05-11] study | A3 OpenClaw Gateway 架构 — 进行中
+## [2026-05-11] study | A3 OpenClaw Gateway 架构
+- 核心发现：Gateway 纯路由层（不产生智能）vs Hermes Engine-First；WebSocket 实时双向设计意图；八大 MD 文件注入体系；Flows CLI 任务可见性是 Hermes 最缺失的能力；安全哲学：OpenClaw fail-closed vs Hermes 默认允许
+- 新增 concepts/openclaw-gateway-architecture.md — Gateway 三层架构 + Flows + 安全对比 + 6 条知识断层
+
+## [2026-05-11] study | A4 OpenClaw Flows CLI — 进行中
