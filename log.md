@@ -179,3 +179,8 @@
   - Hermes official responded Delete your account then blocked the accuser; no resolution yet
   - Hermes v0.12 (2026-04-30) released Curator feature (during controversy period)
 - Updated index.md -- Total pages: 79 -> 83
+- Created openclaw-best-practices.md — 42-case Cookbook distillation: anti-patterns, multi-agent, n8n security, self-healing infra patterns
+- Created hermes-agent-failure-modes.md — 10 failure modes covering whole-turn commit, parallel tool deps, Skills Index inflation, cron stateless, callback black-box, Context Compressor unknowns
+- Created framework-selection-guide.md — merged decision-tree + comparison into definitive selection guide with data table, decision checklist, hybrid usage pattern
+- Archived: openclaw-hermes-decision-tree.md, openclaw-hermes-comparison.md, openclaw-v2026-4-14/23/24-release.md (raw + concepts) — content merged into framework-selection-guide.md
+- Pages: 91 concepts + 52 raw
