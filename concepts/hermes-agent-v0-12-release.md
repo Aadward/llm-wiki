@@ -1,73 +1,83 @@
 ---
-title: Hermes Agent v0.12.0 版本发布
-created: 2026-05-09
-updated: 2026-05-09
+title: Hermes Agent v0.12.0 版本解析
+created: 2026-05-10
+updated: 2026-05-10
 type: concept
-tags: [hermes-agent, release, slash-commands, multi-session, version-history]
+tags: [hermes, version-release, self-evolution, curator, skill-lifecycle]
 sources: [raw/articles/hermes-agent-v0-12-release.md]
 confidence: high
 ---
 
-# Hermes Agent v0.12.0 版本发布
+# Hermes Agent v0.12.0 版本解析
 
-## 概述
+## 核心主题：The Curator Release
 
-Hermes Agent v0.12.0 发布于 2026 年 4 月 30 日，是紧接 v0.11.0（2026-04-23）之后的迭代版本。v0.11.0 带来了 React/Ink TUI 重写、Transport 架构、QQBot 等重大变化；v0.12.0 的主题是**斜杠指令体系完整化**和**多会话并行支持**。
+v0.12.0 发布于 **2026年4月30日**，代号 **"The Curator Release"**。这是 Hermes Agent 历史上最大规模的一次社区驱动更新。
 
-## v0.12.0 核心变化
+## 规模数据
 
-### 界面与交互
+| 指标 | 数值 |
+|------|------|
+| Commits | 1,096 |
+| Merged PRs | 550 |
+| Files Changed | 1,270 |
+| Insertions | 217,776 |
+| Community Contributors | 213（含合著者） |
 
-- **多界面并行**：CLI / Gateway / API Server 可同时运行，不限制单一交互界面
-- 完整的斜杠指令体系，包括：
-  - `/new` / `/reset` / `/retry` / `/undo` — 会话控制
-  - `/copy [N]` / `/image` / `/paste` — 内容操作
-  - `/voice` / `/browser` — 特殊模式
-  - `/history` / `/save` / `/help` — 信息类
+相比 v0.11.0 是一次超大规模更新，社区参与度极高。
 
-### 会话控制
+## 核心新功能：自主 Curator
 
-- 支持**多会话并行管理**
-- `/branch` — 分支会话（类似 git 分支）
-- `/goal` — 设置持续目标（跨轮次持续工作）
-- `/background` — 后台任务
+Hermes Agent 现在可以**自主维护自身**。一个 autonomous background Curator 在后台自动运行，负责：
 
-### 配置类命令完善
+- **Grading（评级）** — 对技能质量进行评估打分
+- **Pruning（剪枝）** — 删除低质量/冗余的技能
+- **Consolidating（整合）** — 合并相似技能，减少重复
 
-- `/model [name]` — 切换模型
-- `/personality [name]` — 设定人格
-- `/reasoning [level]` — 推理深度（none/low/medium/high）
-- `/toolsets` — 工具管理
-- `/config` — 配置查看
+Curator 按设定的时间表自动运行，形成真正的**自我进化闭环**：
+- 任务执行 → 经验提取 → 技能生成 → 使用中评估 → Curator 剪枝整合 → 更高质量技能 → 更好的任务执行
 
-### 安全性
+这是对之前 v0.8/v0.10 版本 skill_manage 系统的实质性升级。
 
-- `/yolo` — 命令审批绕过（适合信任环境）
-- `/security` — 安全状态查看
-- TUI 审批提示更清晰
+## 版本演进脉络
 
-## 版本演进（重要背景）
-
-理解 v0.12.0 需要了解前序版本的快速迭代：
-
-| 版本 | 日期 | 重点更新 |
-|------|------|---------|
-| v0.8.0 | 2026-04-08 | Live Model Switching、后台任务通知、Google AI Studio Provider |
-| v0.9.0 | 2026-04-13 | 本地 Web Dashboard、Fast Mode、iMessage/WeChat、Android Termux |
+| 版本 | 日期 | 核心功能 |
+|------|------|----------|
+| v0.8.0 | 2026-04-08 | Live Model Switching、后台任务通知 |
 | v0.10.0 | 2026-04-16 | Nous Tool Gateway（搜索、图片、TTS、浏览器自动化） |
-| v0.11.0 | 2026-04-23 | React/Ink TUI 重写、Transport 架构、GPT-5.5、**QQBot**、插件系统、/steer |
-| v0.12.0 | 2026-04-30 | 斜杠指令完整化、多会话并行、配置选项扩展 |
+| v0.12.0 | 2026-04-30 | **Autonomous Curator**、自我维护 |
 
-> **重要**：v0.11.0 是重大架构更新（QQBot、Transport 架构），v0.12.0 是交互完善。
+v0.12.0 的发布意味着 Hermes Agent 从"具备自我进化能力"进化到"能够自主维护和优化自身技能库"。
 
-## 与 wiki 中现有页面的关系
+## ⚠️ 争议事件：EvoMap 抄袭指控
 
-- [[hermes-agent]] — Hermes Agent 实体页（概述）
-- [[hermes-agent-best-practices]] — 最佳实践
-- 当前页面补充了**版本演进时间线**，为最佳实践提供版本参照
+**2026年4月15日**，中国 AI 团队 EvoMap 公开指控 Hermes Agent 的核心自进化功能抄袭了其开源项目 **Evolver**。
+
+### 核心指控
+EvoMap 发布的详细技术对比报告显示两者存在**"结构性同构"**：
+- Evolver 的 10 步进化主循环 ↔ Hermes 自进化模块的 10 步执行流程一一对应
+- 12 组核心术语系统性替换（Gene→SKILL.md, Capsule→技能执行记录, solidify→skill_manage 等）
+- 三层记忆体系高度相似（持久事实层 + 程序性记忆层 + 历史搜索层）
+
+### 关键时间线
+- **2025年12月**：EvoMap Evolver 最早 commit（有记录）
+- **2026年02月01日**：EvoMap 公开开源 Evolver
+- **2026年03月09日**：Hermes Agent 自进化子仓库创建
+- **2026年03月12日**：Hermes v0.2.0 发布（带自进化功能）
+- **2026年04月15日**：EvoMap 发表详细指控报告
+
+### Nous Research 回应
+Hermes 官方回应为：**"我们的仓库2025年7月就有了。我们是先驱。Delete your account。"** 并拉黑了 EvoMap 团队成员。
+
+### 争议焦点
+- 私有仓库内容无法独立验证，不能作为原创证据
+- 被指控的 7 个同构特征全部集中在 3月9日 创建的自进化子仓库
+- 时间线存在 36 天的差距
+
+**截至 wiki 更新（2026-05-10），此争议尚无定论。**
 
 ## 相关页面
-
-- [[hermes-agent]] — 实体页
-- [[hermes-agent-best-practices]] — 最佳实践
-- [[openclaw-hermes-comparison]] — 跨框架对比
+- [[hermes-agent-v0-8-v0-10-release]] — v0.8/v0.10 版本解析
+- [[hermes-agent-skill-library]] — 技能系统官方生态
+- [[memory-knowledge-systems]] — 记忆系统系列（含 OpenClaw 方案对比）
+- [[hermes-agent-evolution-controversy]] — Evolver 抄袭事件详细记录（待创建）

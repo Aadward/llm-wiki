@@ -163,3 +163,19 @@
 - 新增 concepts/hermes-agent-v0-8-v0-10-release.md — Live Model Switching,国内直连
 - 冲突检测:无冲突(均为版本演进内容,与现有知识体系无重叠)
 - 更新 index.md — Total pages: 76 → 79
+
+
+## [2026-05-10] study | Version scan: OpenClaw v2026.4.23/4.24 + Hermes v0.12.0 + EvoMap controversy
+- Research found important new versions and controversy event since last study (2026-05-12)
+- New raw/articles/openclaw-v2026-4-23-release.md -- v2026.4.23 raw (GPT-5.5/subagent)
+- New raw/articles/openclaw-v2026-4-24-release.md -- v2026.4.24 raw (DeepSeek V4/Google Meet)
+- New raw/articles/hermes-agent-v0-12-release.md -- Hermes v0.12.0 raw (Curator Release)
+- New concepts/openclaw-v2026-4-23-release.md -- GPT-5.5 + subagent branch context
+- New concepts/openclaw-v2026-4-24-release.md -- DeepSeek V4 as default (17x cost reduction) + plugin perf leap
+- New concepts/hermes-agent-v0-12-release.md -- Autonomous Curator, 1096 commits
+- New concepts/hermes-agent-evolution-controversy.md -- EvoMap accuses Hermes of architectural-level plagiarism
+- CONFLICT REPORT: Hermes EvoMap plagiarism controversy
+  - EvoMap (2026-04-15) accuses Hermes self-evolution module (10-step loop / 3-layer memory / 12 term replacements) of high structural isomorphism with Evolver
+  - Hermes official responded Delete your account then blocked the accuser; no resolution yet
+  - Hermes v0.12 (2026-04-30) released Curator feature (during controversy period)
+- Updated index.md -- Total pages: 79 -> 83

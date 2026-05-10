@@ -75,7 +75,10 @@ updated: 2026-05-11
 |- [[openclaw-v2026-3-28-release|OpenClaw v2026.3.28]] — 安全阀 requireApproval、Grok 搜索、image-01 多模态整合
 |- [[openclaw-v2026-4-5-release|OpenClaw v2026.4.5]] — 多媒体版：图片/音频进入核心、/dreaming、Prompt Cache 优化
 |- [[openclaw-v2026-3-11-release|OpenClaw v2026.3.11]] — 安全强化版：WebSocket 源验证、插件隔离、session 沙盒
-|- [[hermes-agent-v0-12-release|Hermes v0.12.0]] — 斜杠指令完整化、多会话并行、版本演进时间线
+|- [[hermes-agent-v0-12-release|Hermes v0.12.0]] — The Curator Release（Autonomous Curator 自主维护技能库）、1096 commits
+- [[hermes-agent-evolution-controversy|Hermes EvoMap 争议]] — ⚠️ 争议：EvoMap 指控 Hermes 架构级抄袭Evolver（2026-04-15）[[★ 需关注]]
+- [[openclaw-v2026-4-23-release|OpenClaw v2026.4.23]] — GPT-5.5落地、子智能体分支上下文、双通道图像生成
+- [[openclaw-v2026-4-24-release|OpenClaw v2026.4.24]] — DeepSeek V4成默认模型（成本降17x）、Google Meet原生集成、插件性能飞跃
 
 ### 🌐 跨框架通用概念
 
@@ -145,4 +148,4 @@ updated: 2026-05-11
 
 ---
 
-*Last updated: 2026-05-12 | Total pages: 79*
+*Last updated: 2026-05-10 | Total pages: 83*
