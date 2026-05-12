@@ -386,6 +386,165 @@ Telegram/Discord
 
 ---
 
+
+### 第三层：有局限性的场景
+
+| 场景 | 局限性 | 建议 |
+|------|--------|------|
+| 纯编程任务 | Hermes 不提升代码生成质量 | 用 Claude Code / Cursor |
+| 50+ 平台接入 | 目前仅 15 个平台官方支持 | OpenClaw 更适合 |
+| 高稳定性生产环境 | v0.12 仍有较多 open issues | 等待更成熟版本 |
+
+---
+
+## 四、热门 Use Cases 精选（99 社区案例精华）
+
+以下精选自 Hermes 官方 99 个 User Stories，按影响力排序。
+
+### 🔥 必读标杆案例
+
+#### 1. 12 并行实例开发 Hermes 自身 ⭐⭐⭐⭐⭐
+> **@Teknium（Hermes 核心开发者）**
+> "I literally run 12 hermes agent instances every day in parallel to build Hermes Agent, and it's now a top 100 GitHub repositories of all time. Our backend team uses it to monitor and investigate issues with our stack. Our post training team uses them to create new RL environments and benchmarks, investigate, inspect and sometimes directly manipulate the datasets."
+
+**工程价值**：证明了 Hermes 可以支撑顶级开源项目的日常开发。
+
+#### 2. 家庭共享 Agent（WhatsApp 版）⭐⭐⭐⭐⭐
+> **@EXM7777**
+> "3 weeks ago I decided to setup an Hermes agent for my family (3 members), they all use it for different use cases, one $200 ChatGPT sub is more than enough. It unlocked a whole new world for them, just because it lives inside WhatsApp and has magic proactive behaviors."
+
+**关键洞察**：
+- 一个强模型订阅支撑 3 人家庭
+- WhatsApp 触达，无学习成本
+- **Magic Proactive Behaviors**（主动行为）是差异化能力
+
+#### 3. 自主电影生成 ⭐⭐⭐⭐⭐
+> **@alexcovo_eth**
+> "My @NousResearch hermes-agent can make movies now using @browser_use skill. No API needed. No human intervention. I told it to set the mood, action, camera movement, dialog and overall story — it used Browser-Use and Seedance 2.0 to generate a video."
+
+**技术栈**：Hermes Agent + Browser-Use Skill + Seedance 2.0
+**意义**：完全端到端无需人工干预的创意自动化
+
+#### 4. 用 Hermes 修 OpenClaw ⭐⭐⭐⭐⭐
+> **@gkisokay**
+> "POV: you use Hermes agent to fix your OpenClaw to save countless hours and credits every day."
+
+**混合架构启示**：OpenClaw 作为网关 + Hermes 作为执行引擎，两者协同。
+
+---
+
+### 🏛️ 行业垂直应用
+
+#### 法律行业全流程重构（2026–2029）
+来源：今日头条法律 AI 预测（2026-04-21）
+
+| 时间 | Hermes 能力 | 行业影响 |
+|------|-----------|----------|
+| 短期（0–12月）| 案例检索、合同审查、庭前准备 | 法务 AI 辅助工具 |
+| 中期（1–2年）| 办案流程自动化、证据链构建 | 律所全流程自主办案 |
+| 长期（2–3年）| 自主智能办案体 | 重构行业分工与服务定价 |
+
+**核心判断**：AI 不替代律师，善用 Hermes 的律师淘汰不用 AI 的同行。
+
+---
+
+### 🤖 Hermes + GPT-5.5：最强组合模式
+
+来源：CSDN（2026-05-10）
+
+GPT-5.5 解决了"能力"问题，但 Hermes 补全了"记忆"和"成长"问题：
+
+| 维度 | 单独 GPT-5.5 | Hermes + GPT-5.5 |
+|------|-------------|-----------------|
+| 跨会话记忆 | ❌ 无 | ✅ SQLite + FTS5 |
+| 持久技能积累 | ❌ 每次重新学 | ✅ 自动技能文档化 |
+| 多平台触达 | ❌ 仅 API/Web | ✅ Telegram/Discord/WhatsApp |
+| 定时任务 | ❌ 需外部调度 | ✅ 内置 Cron Scheduler |
+| 成本优化 | ❌ 全量调用 | ✅ 智能路由按需调用 |
+
+**核心场景一：GUI 自动化 / RPA 替代**
+- GPT-5.5 OSWorld 验证 78.7%（行业最高）
+- Hermes 提供记忆 + 技能沉淀
+- 两者结合 = 可记忆的自动化 RPA
+
+---
+
+### 🇨🇳 中文生态集成
+
+#### 微信直连（中国用户特供）
+- 飞书（Feishu）：官方原生支持
+- 钉钉（DingTalk）：官方原生支持
+- 微信（WeChat）：社区桥接器支持
+- 元宝（Yuanbao）：通过 Yuanbao MCP 集成
+
+**配置命令**：
+```bash
+hermes gateway setup
+# 选择 Feishu / DingTalk / WeCom 等平台
+```
+
+---
+
+### ⚠️ 反模式（Anti-Patterns）
+
+以下做法社区反馈效果差，**避免**：
+
+| 反模式 | 为什么效果差 | 正确做法 |
+|--------|-------------|----------|
+| 每次新建会话做完全不同的事 | 技能库无法积累，Hermes 优势归零 | 固定高频工作流，让技能沉淀 |
+| 所有任务都用最强模型 | 成本爆炸，Auxiliary Models 完全没用上 | 边角任务用轻量模型 |
+| 从不维护技能库 | 过时技能积累，Curator 从不运行 | 每两周运行 `hermes curator run` |
+| 在没有容器隔离的服务器上开 YOLO | 危险命令无审批，数据泄露风险 | 生产环境用 Docker 后端 + smart 审批 |
+| 混用 OpenClaw 和 Hermes 不做角色分工 | 两个 Agent 做同一件事，资源浪费 | OpenClaw 做网关，Hermes 做执行引擎 |
+
+---
+
+## 五、与 OpenClaw 的协同模式
+
+### 混合架构：OpenClaw 网关 + Hermes 执行引擎
+
+```
+用户（任意平台）
+    ↓
+OpenClaw Gateway（多渠道接入、插件生态、任务可见性）
+    ↓ 触发
+Hermes Agent（自我进化、闭环学习、跨会话记忆）
+    ↓ 执行
+结果回传 OpenClaw → 用户
+```
+
+**适用场景**：
+- 需要 OpenClaw 丰富插件生态（ClawHub 13000+ 技能）
+- 但希望任务执行有记忆和自我进化能力
+- 两者的优势互补而非竞争
+
+**不适用**：
+- 小型个人项目，引入两者太重
+- 需要 50+ 平台接入，以 OpenClaw 为主
+
+---
+
+## 六、工程成熟度 Checklist（2026-05 更新）
+
+### 生产可用 ✅
+- [x] 定时 Cron 任务（内置调度器）
+- [x] 多模型路由（20+ 提供商）
+- [x] 跨平台 Gateway（Telegram/Discord/Slack）
+- [x] 技能自动沉淀（Curator 自动维护）
+- [x] FTS5 全文记忆检索
+
+### 需要注意 ⚠️
+- [~] 长期运行稳定性（建议配合 Watchdog）
+- [~] MCP 安全集成（需白名单模式）
+- [~] 上下文压缩（大型项目注意 token 消耗）
+
+### 即将成熟 🔜
+- [ ] GPT-5.5 深度集成（Computer Use + Hermes Memory）
+- [ ] 更多中国平台原生支持（微信企业版、钉钉）
+- [ ] Enterprise 多租户模式
+
+
+
 ## 相关概念
 
 - [[hermes-agent]] — 整体框架

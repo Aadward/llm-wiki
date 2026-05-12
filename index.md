@@ -134,6 +134,28 @@ updated: 2026-05-11
 
 ---
 
+## Hermes Agent 精选 Use Cases（2026-05 新增）
+
+> 精选自 99 个官方 User Stories，覆盖 15 个分类。完整案例见 `raw/articles/hermes-agent-use-cases-2026.md`
+
+| 案例 | 分类 | 亮点 |
+|------|------|------|
+| [[usecases/hermes-multi-agent-dev\|12 并行实例开发 Hermes]] | Multi-Agent | Teknium 核心开发团队日用，top 100 GitHub |
+| [[usecases/hermes-family-whatsapp\|家庭共享 Agent]] | Personal | 3 人家庭，WhatsApp 触达，$200 订阅全家用 |
+| [[usecases/hermes-autonomous-movie\|自主电影生成]] | Creative | Browser-Use + Seedance 2.0，零 API 成本 |
+
+**社区热门 Top 5**：
+1. 12 并行实例开发自身（工程标杆）
+2. 家庭 WhatsApp Agent（成本效率）
+3. 自主电影生成（创意自动化）
+4. Hermes 修 OpenClaw（混合架构）
+5. 法律行业全流程自动化（垂直行业）
+
+**行业分类分布**（99 个案例）：
+Dev Workflow（16）· Personal Assistant（16）· Integrations（15）· Enterprise（6）· Content Creation（5）· Research（4）· Trading（3）· Creative（3）
+
+---
+
 ## Wiki Structure
 
 本 Wiki 遵循 Karpathy LLM Wiki 的三层架构：
@@ -148,4 +170,4 @@ updated: 2026-05-11
 
 ---
 
-*Last updated: 2026-05-10 | Total pages: 83*
+*Last updated: 2026-05-12 | Total pages: 87*

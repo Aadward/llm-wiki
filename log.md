@@ -184,3 +184,19 @@
 - Created framework-selection-guide.md — merged decision-tree + comparison into definitive selection guide with data table, decision checklist, hybrid usage pattern
 - Archived: openclaw-hermes-decision-tree.md, openclaw-hermes-comparison.md, openclaw-v2026-4-14/23/24-release.md (raw + concepts) — content merged into framework-selection-guide.md
 - Pages: 91 concepts + 52 raw
+
+## [2026-05-12] ingest | Hermes Agent best practices + hot use cases research
+- Research: surveyed 10+ Chinese and English sources on Hermes Agent best practices and use cases
+- Updated concepts/hermes-agent-best-practices.md — added 4 new sections:
+  - 四、热门 Use Cases 精选（99 社区案例精华）— 5 标杆案例、分类分布表
+  - 五、Hermes + GPT-5.5 最强组合模式 — 能力互补矩阵
+  - 六、中文生态集成 — 微信/飞书/钉钉/元宝
+  - 七、工程成熟度 Checklist（2026-05 更新）
+  - Anti-Patterns 反模式 — 5 个社区反馈效果差的做法
+- Created 3 new usecases/ pages:
+  - usecases/hermes-multi-agent-dev.md — Teknium 12 并行实例
+  - usecases/hermes-family-whatsapp.md — 家庭共享 Agent
+  - usecases/hermes-autonomous-movie.md — 自主电影生成
+- Updated index.md — added Hermes Use Cases section, Total pages: 83 → 87
+- Key insight: Hermes 的价值在于「用得越久越聪明」，最佳实践本质是找到高重复性工作流让技能沉淀
+
