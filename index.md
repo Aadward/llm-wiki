@@ -15,8 +15,9 @@ updated: 2026-05-11
 
 ## Entities（实体）
 
-|- [[openclaw|OpenClaw]] — "AI that actually does things"，多渠道接入、任务可见性强、社区技能生态丰富（44,000+）
-|- [[hermes-agent|Hermes Agent]] — "The agent that grows with you"，自我进化、GEPA 闭环学习、四层记忆架构
+>- [[openclaw|OpenClaw]] — "AI that actually does things"，多渠道接入、任务可见性强、社区技能生态丰富（44,000+）
+>- [[hermes-agent|Hermes Agent]] — "The agent that grows with you"，自我进化、GEPA 闭环学习、四层记忆架构
+>- [[opencode|OpenCode]] — 开源 AI 编程 Agent，GitHub 159k Stars，多模型支持，CLI/TUI/Server/Web 四种运行形态
 
 ---
 
@@ -62,9 +63,14 @@ updated: 2026-05-11
 |- [[cost-optimization-comparison|成本优化对比]] — Hermes 优化 token 量 vs OpenClaw 优化缓存命中率、Auxiliary Models 节省 40-60%
 |- [[multi-agent-collaboration|多 Agent 协作对比]] — CEO Pattern vs Kanban Orchestrator、共享竞态问题、凭证隔离模式 [[★ 协作必读]]
 
+### 🔧 OpenCode 核心机制
+
+- [[opencode|OpenCode 实体页]] — 159k Stars、四种运行形态、多模型支持 [[→ Guidebook：[[opencode-server-guidebook|OpenCode 服务器部署]]]] [[★ OpenCode 必读]]
+- [[opencode-server-guidebook|OpenCode 服务器部署 Guidebook]] — systemd 守护进程、Skills 工作流、MCP 集成 [[→ 调研：[[summaries/opencode-research-summary|OpenCode 调研总结]]]]
+
 ### 🔧 OpenClaw 核心机制
 
-|- [[openclaw-source-code-architecture|OpenClaw 源码架构]] — Core/Memory/Heartbeat/Session 四大机制深度解析
+- [[openclaw-source-code-architecture|OpenClaw 源码架构]] — Core/Memory/Heartbeat/Session 四大机制深度解析
 |- [[openclaw-2026-background-tasks-flows|OpenClaw 后台任务与 Flows 系统]] — 任务感知与恢复 [[→ 深度：[[openclaw-flows-cli|OpenClaw Flows CLI]]]] [[★ 后台任务必读]]
 |- [[openclaw-flows-cli|Flows CLI 任务编排]] — 线性设计哲学（有意选择）、SQLite 分类账、可见性 vs 自动完成 [[→ 上游：[[openclaw-2026-background-tasks-flows|OpenClaw 后台任务与 Flows 系统]]]]
 |- [[openclaw-2026-plugin-sdk|Plugin SDK 重构]] — extension-api 废弃、plugin-sdk 启用、Context Engine（2026.3）
@@ -119,7 +125,8 @@ updated: 2026-05-11
 
 ## Summaries（摘要）
 
-|- [[openclaw-cookbook-summary|OpenClaw Cookbook 核心要点]] — 10 章节精华速查
+- [[openclaw-cookbook-summary|OpenClaw Cookbook 核心要点]] — 10 章节精华速查
+- [[summaries/opencode-research-summary|OpenCode 调研总结]] — 服务器部署调研结论、证据链、关键发现
 
 ---
 

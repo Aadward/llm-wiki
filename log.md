@@ -26,7 +26,13 @@
 - Rewrote `index.md` as full navigation page with table of contents
 - Fixed broken links: `[[infra]]` → `[[persistent-agent-patterns]]`, `[[raw/articles/]]` → plain text
 - Deleted `concepts/usecases/` (had full duplicate content)
-## [2026-05-08] translate | openclaw-cookbook-summary → 中文
+## [2026-05-13] create | OpenCode 调研材料入库
+- 新增 entities/opencode.md — OpenCode 实体页（159k Stars、架构、四种运行形态、多模型支持）
+- 新增 concepts/opencode-server-guidebook.md — 服务器部署与生产工作流实操手册（systemd/Skills/MCP/Hermes集成）
+- 新增 summaries/opencode-research-summary.md — 调研总结（证据链、关键发现、可信度评估）
+- 新增 raw/articles/opencode-research-2026-05.md — 调研原始素材（20+ 来源列表）
+- 更新 index.md — 添加 OpenCode 相关条目（Entities + OpenCode 章节 + Summaries）
+- 调研结论：核心内容可靠，安装命令和服务器模式有官方+多重第三方证据
 - 将 summaries/openclaw-cookbook-summary.md 全文翻译为中文
 - 保留所有章节结构、表格、代码块
 - 更新 frontmatter updated 日期
