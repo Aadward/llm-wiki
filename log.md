@@ -206,3 +206,21 @@
 - Updated index.md — added Hermes Use Cases section, Total pages: 83 → 87
 - Key insight: Hermes 的价值在于「用得越久越聪明」，最佳实践本质是找到高重复性工作流让技能沉淀
 
+
+## [2026-05-15] ingest | NemoClaw 调研入库
+
+**调研覆盖**：NVIDIA/NemoClaw GitHub（20,417 ⭐）、awesome-nemoclaw 社区生态、官方文档（架构、推理选项、网络策略、沙箱加固、生命周期管理）
+
+**调研重点**：
+- 核心能力：沙箱三层隔离（Landlock + seccomp + netns）、推理路由（credentials never in sandbox）、声明式网络策略、Blueprint 版本化管理
+- 关键配置：安装（`curl -fsSL https://nvidia.com/nemoclaw.sh | bash`）、onboard 向导、策略层级（Restricted/Balanced/Open）
+- 最佳实践：OpenShell 生命周期边界、凭证管理、升级快照、Landlock 验证、多沙箱端口隔离
+- 生态资源：VoltAgent/awesome-nemoclaw 社区 preset（覆盖 20+ 服务）
+
+**创建文件**：
+- `raw/articles/nvidia-nemoclaw-2026.md` — 原始材料存档
+- `entities/nemoclaw.md` — NemoClaw 实体页（概述、Provider、CLI 命令、生态）
+- `concepts/nemoclaw-architecture.md` — NemoClaw 架构深度解析（分层拓扑、凭证路由、设计原则）
+- `concepts/nemoclaw-best-practices.md` — NemoClaw 最佳实践（安全边界、升级回滚、策略管理、反模式）
+
+**更新 index.md**：添加 NemoClaw 实体 + 3 个概念页到安全与凭证章节，Total pages: 87 → 91

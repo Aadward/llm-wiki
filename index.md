@@ -18,6 +18,7 @@ updated: 2026-05-11
 >- [[openclaw|OpenClaw]] — "AI that actually does things"，多渠道接入、任务可见性强、社区技能生态丰富（44,000+）
 >- [[hermes-agent|Hermes Agent]] — "The agent that grows with you"，自我进化、GEPA 闭环学习、四层记忆架构
 >- [[opencode|OpenCode]] — 开源 AI 编程 Agent，GitHub 159k Stars，多模型支持，CLI/TUI/Server/Web 四种运行形态
+>- [[nemoclaw|NemoClaw]] — NVIDIA OpenShell 沙箱中的 OpenClaw 安全加固堆栈，凭证隔离、推理路由、声明式网络策略
 
 ---
 
@@ -97,6 +98,10 @@ updated: 2026-05-11
 |- [[alert-center-patterns|Alert Center 模式]] — LLM 告警归并、根因分析、团队路由
 
 ### 🛡️ 安全与凭证
+
+|- [[nemoclaw|NemoClaw]] — NVIDIA OpenShell 沙箱中的 OpenClaw 安全加固：Landlock + seccomp 隔离、推理路由、deny-by-default 网络策略 [[★ 安全必读]]
+|- [[nemoclaw-architecture|NemoClaw 架构深度解析]] — Gateway/k3s/沙箱分层、L7 凭证注入、Blueprint 版本化 [[★ 架构必读]]
+|- [[nemoclaw-best-practices|NemoClaw 最佳实践]] — 升级回滚、策略管理、社区 Preset、内存优化、反模式 [[★ 运维必读]]
 
 |- [[security-credential-management|安全凭证管理]] — TruffleHog、API Key 硬编码风险、凭证隔离 [[→ 系列：[[security-model-comparison|安全模型对比]]]]
 
